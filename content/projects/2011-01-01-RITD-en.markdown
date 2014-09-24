@@ -1,0 +1,33 @@
+---
+title: RITD - Re-entry: inflatable technology development in Russian
+       collaboration
+contact: Dr. Ari-Matti Harri
+contact_mail: Ari-Matti.Harri@fmi.fi
+---
+
+
+Objects re-entering the atmosphere of the Earth from space require
+systems to decelerate the object during its descent phase as well as
+protection against temperatures of several hundreds of degrees of
+centigrade caused by the atmospheric friction. We propose to study the
+feasibility of using with the Earth re-entry a system developed for
+entering the Martian atmosphere. The focus of this work will be in
+analyzing and measuring the dynamical stability in transonic phase of a
+brand new re-entry and descent system for low mass payloads. We are to
+investigate an entry, descent and landing system developed for Mars.
+This system is based on brand new technology involving inflatable
+structures saving a considerable amount of mass compared to traditional
+rigid structures. The project behind is MetNet Precursor, which is a
+planetary exploration mission to Mars, aimed to deploy on its surface a
+meteorological station based on a new type of semi-hard landing vehicle
+called MetNet Lander (MNL). This work will investigate the feasibility
+to use the MetNet entry and descent system at Earth allowing for scaling
+modifications for the key systems assuming deorbitation from a LEO
+orbit. Specifically, this work will analyze by simulations and by wind
+tunnel testing the stability of the entry and descent system during the
+supersonic and transonic phases of the descent in the atmosphere of the
+Earth. This work will foster collaboration between Russian and European
+organizations, and will provide brand-new knowledge on the re-entry
+systems. This project will effectively reduce duplication of research
+efforts and will open new avenues for joint space technology research
+and development.

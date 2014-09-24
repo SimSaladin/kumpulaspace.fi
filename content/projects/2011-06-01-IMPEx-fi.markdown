@@ -1,0 +1,38 @@
+---
+title: Integrated Medium for Planetary Exploration - Yhtenäinen
+         planeettatutkimusympäristö eri luotainten mittausaineistoista ja
+         tietokonemalleista
+contact: Dr. Esa Kallio
+contact_mail: Esa.Kallio@fmi.fi
+---
+
+
+Hankkeessa luodaan yhtenäinen planeettatutkimusympäristö yhdistämällä
+planeettaluotainten mittausaineisto tietokonemallien antamiin
+ennusteisiin. Ympäristö tarjoaa käyttäjälle helppokäyttöisen
+WWW-liittymän jolla pääsee yhdistämään avaruusluotainten ja
+tietokonemallien antamia aineistoja toisiinsa. Palvelua voi käyttää
+tutkijat, opiskelija ja yleisemmin kaikki niin avaruustutkimuksesta kuin
+avaruussäästä kiinostuneet.
+
+ Ilmatieteen laitos tarjoaa rakennettavaan tutkimusympäristöön
+tietokonemallien tulokset joita on tehty Merkuriukselle, Venukselle,
+Maalle, Kuulle, Marsille ja komeetoille. Jupiterin ja Saturnuksen mallit
+tulevat Venäjältä. Avaruusluotainten mittausaineisto tulee Ranskassa
+olevasta data-palvelimesta.
+
+ Hankkeessa yhdistettävä mittaus- ja mallinnusaineisto liittyy
+avaruustutkimukseen, jossa tutkitaan Aurinkokunnan kappaleiden ympärillä
+olevia sähköisesti varattuja hiukkasia sekä niiden liikettä ohjaavia
+sähkömagneettisia kenttiä. Aineistojen yhdistäminen ja rakennettavat
+työvälineet tulevat omalta osaltaan auttamaan ymmärtämään paremmin
+avaruussäätä ja sen vaikutuksia niin Maassa kuin muilla planeetoilla.
+
+
+-   4-vuotinen projekti (alkoi 1.6.2011)
+-   EU:n osuus: 2 Me
+-   Konsortiossa neljä partneria:
+    1.  IWF-ÖAW , Itävalta (koordinaattori)
+    2.  Ilmatieteen laitos, Suomi (apukoordinaattori)
+    3.  CNRS, Ranska
+    4.  SINP, Venäjä

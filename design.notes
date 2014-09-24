@@ -1,4 +1,19 @@
 
+# Site structure
+
+- /fi
+- /en
+
+- Home                   (home.markdown)
+- Organization           (description.markdown)
+- Projects               (projcets/<name>.markdown; section>h1,.content)
+- Publications           (publications/pdf's)
+- Topics for MSc Theses  (theses/<name>.markdown; listing)
+   
+- FMI Space Sesearch http://space.dmi.fi
+- UH Space Physics http://theory.physics.helsinki.fi/~space
+- UH Astrophysics and Cosmology http://www.physics.helsinki.fi/tutkimus/afo
+
 # esimerkkejä 
 http://space.mit.edu/
 
@@ -12,3 +27,4 @@ http://space.mit.edu/
 
 # useful things
 http://tympanus.net/Development/CreativeLinkEffects/
+

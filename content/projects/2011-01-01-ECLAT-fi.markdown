@@ -1,0 +1,50 @@
+---
+title: European Cluster Assimilation Technology - Havaintoja ja
+       mallinnustuloksia tarjoava palvelin Maan lähiavaruuden tutkimukseen
+contact: Dr. Kirsti Kauristie
+contact_mail: Kirsti.Kauristie@fmi.fi
+---
+
+Maan magnetosfääri suojaa planeettaamme ja sen ilmakehää Auringosta
+tulevan hiukkasvuon, aurinkotuulen, kuluttavalta vaikutukselta.
+Toisaalta magnetosfääri yhdessä ionosfäärin kanssa tarjoaa helposti
+lähestyttävän laboratorion avaruusplasmafysiikan tutkimukseen.
+
+ Lähiavaruuden tutkimuksessa Maan pinnalta ja satelliiteista käsin
+tehdyt havainnot tukevat mallinnustyötä. Satelliittihavaintojen saralla
+Euroopan avaruusjärjestön (ESA) vuonna 2000 käynnistynyt Cluster-hanke
+on ollut käänteentekevä uudistus: neljän satelliitin muodostelmalla
+pystyttiin ensimmäistä kertaa tarkasti erottelemaan aika- ja
+paikkavaihtelut magnetosfäärissä esiintyvien rajapintojen läpi
+lennettäessä. Vuonna 2005 ESA perusti Clusterille oman data-arkiston,
+jota on käyttänyt jo yli 1100 tutkijaa eri maista. ECLAThankkeessa
+Cluster-arkistoa laajennetaan datatuotteilla, jotka tyypillisesti
+perustuvat useista eri lähteistä kerättyihin havaintoihin ja
+jatkoanalyysiin. Havaintojen tulkinnan tueksi ECLAT tarjoaa myös
+Auringon ja Maan lähiavaruuden vuorovaikutuksia kuvaavia
+tietokonesimulaatiotuloksia. Näin tutkijat jatkossa pääsevät entistä
+nopeammin käsiksi fysikaalisten ilmiöiden tilastolliseen tutkimukseen,
+koska raakadatan jalostustyö on jo valmiiksi tehty.
+
+ Ilmatieteen laitoksella (IL) on ECLAT-hankkeessa keskeinen rooli. IL
+omistaa Euroopan ainoan koko magnetosfääriä mallintavan
+simulaatiokoodin, jota ECLAT hyödyntää. Palvelu tarjoaa
+tutkijayhteisölle simulaatiotuloksia kokonaisen vuoden ajalta
+Cluster-havaintoihin vertailtaviksi. Revontulifysiikka on yksi keskeinen
+Cluster-havaintoja hyödyntävä tutkimusala, jossa IL:n koordinoiman
+tutkijayhteisön maanpintamittalaiteverkostoa käytetään laajasti.
+IMAGE-magnetometriverkon mittausten perusteella tehdään
+ionosfäärivirtojen käyttäytymistä kuvaavia karttoja, joiden avulla
+saadaan tärkeää tietoa siitä, miten Clusterin havainnoimat
+magnetosfäärin ilmiöt kytkeytyvät revontulien käyttäytymiseen.
+Yleisemmällä tasolla hankkeen tavoitteena on parantaa tietämystä
+avaruussääilmiöistä siten, että niiden haittavaikutuksia maanpinnalla ja
+avaruudessa toimivalle teknologialle (esim. paikannus- ja
+tietoliikennesatelliittien toimintoihin liittyen) pystytään ennakoimaan
+entistä paremmin.
+
+ ECLAT on kolmen vuoden hanke, joka käynnistyi maaliskuussa 2011.
+Hanketta vetää Leicesterin yliopisto. Englannin ja Suomen ohella
+hankkeeseen osallistuu myös tutkimuslaitoksia Ruotsista, Itävallasta ja
+Venäjältä. Hankkeen kokonaisbudjetti on n. 2 miljoonaa euroa, josta EU:n
+osuus on 1,5 miljoonaa euroa.

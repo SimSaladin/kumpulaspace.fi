@@ -1,0 +1,32 @@
+---
+title: E-SQUID - Suprajohtavilla signaalinvahvistimilla tarkkoja kuvia
+       himmeistäkin kaukaisen avaruuden kohteista
+contact: Dr. Juhani Huovelin
+contact_mail: Juhani.Huovelin@helsinki.fi
+---
+
+Moderni astrofysiikan tutkimus pyrkii tutkimaan maailmankaikkeuden
+syntyä ja nuorta maailmankaikkeutta jo sen ensimmäisen
+elinvuosimiljardin aikana. Avaruuteen lähetetään eri aallonpituuksia
+mittaavia laitteita, jotka tutkivat kaukaisia ja ihmissilmälle
+näkymättömiä kohteita. Röntgenilmaisimet rekisteröivät muun assa suurten
+mustien aukkojen hehkua ja alkuräjähdyksen jälkeistä kuumaa kaasua, ja
+infrapunailmaisimet ulkoavaruuden viileiden kappaleiden säteilyä.
+
+ Tällä hetkellä maailman herkimmät mittalaitteet sekä röntgensäteilyn
+että kaukoinfrapunan havainnointii perustuvat hyvin kylmässä
+lämpötilassa tapahtuvaan suprajohtavuusilmiöön. SQUID (Superconducting
+Quantum Interference Device) on lähellä absoluuttista nollapistettä
+toimivan säteilyilmaisimen esivahvistin, jota käytetään
+E-SQUID-projektissa kryogeenisten suprajohdeilmaisinten signaalin
+lukemiseen ja esiprosesointiin.
+
+ Tässä projektissa kehitetään SQUID-lukuelektroniikkan nykyistä herkempi
+ja suurempikokoisiin ilmaisinmatriiseihin soveltuva prototyyppi.
+Pitemmän tähtäimen tavoitteena ovat röntgen- ja
+kaukoinfrapuna-aallonpituuksilla toimivat miljoonien pikseleiden
+kokoluokkaan skaalautuvat ultraherkät ilmaisimet, joita voi käyttää
+tieteellisessä tutkimuksessa avaruudessa ja maan päällä, sekä hyödyntää
+myös kaupallisesti. Tieteellisten sovellusten ohella hanke kehittää
+Helsingin yliopiston osaamista ilmaisinelektroniikan ohje moinnissa ja
+testauksessa

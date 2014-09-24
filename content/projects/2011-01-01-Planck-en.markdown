@@ -1,0 +1,52 @@
+---
+title: Planck
+contact: Dr. Hannu Kurki-Suonio
+contact_mail: Hannu.Kurki-Suonio@helsinki.fi
+---
+
+Planck is the European Space Agency (ESA) survey mission to measure the
+anisotropy and polarization of the cosmic microwave background (CMB)
+radiation. The Planck satellite was launched in 2009. The survey will be
+completed in 2012, after which there is a proprietary period of two
+years, for analyzing the data and deriving the scientific results of the
+mission. After that, the Planck data will be released to the public
+domain. In addition to the cosmic background radiation, the Planck data
+are being used to study the Milky Way, other galaxies, and clusters of
+galaxies.
+
+ The coldest interstellar cloud cores within the Milky Way are a key to
+understanding the birth of stars as it is from these clouds that new
+stars are still being formed. Because of their extremely low
+temperatures, the cloud cores are still poorly known objects. However,
+they emit most of their radiation in the submillimetre region of the
+electromagnetic spectrum making them an ideal target for the Planck
+mission. Astronomers have compiled the first unbiased, all-sky survey of
+compact cold dust clouds - the Cold Clump Catalogue of Planck Objects
+(C3PO) - that contains over 10,000 objects. Part of the catalogue was
+published in January 2011 as part of the Planck Early Release Compact
+Source Catalogue (ERCSC).
+
+ A few hundred of the cores that were located by Planck are studied in
+more detail within the Herschel key programme Galactic Cold Cores.
+Herschel is currently the largest space borne telescope and its high
+resolution measurements enable the researchers to map the internal
+structure of the clumps and to determine their physical characteristics.
+This sheds light on the initial conditions of the star formation process
+and helps to improve theories of star formation.
+
+ **Links:**
+
+ Cold Cores project:
+ <https://wiki.helsinki.fi/display/PlanckHerschel/The+Cold+Cores>
+
+ Astronomical studies with the Planck and Herschel satellites, (in
+Finnish):
+ <https://wiki.helsinki.fi/display/PlanckHerschel/The+Cold+Cores>
+
+ **Personnel:**
+ Department of Physics, Division of geophysics and astronomy
+
+-   Mika Juvela, lecturer, principal investigator of the project
+    Galactic Cold Cores
+-   Nathalie Ysard, post doctoral researcher
+-   Johanna Malinen, graduate student

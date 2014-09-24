@@ -1,0 +1,41 @@
+---
+title: IMPEx - Integrated Medium for Planetary Exploration
+contact: Dr. Esa Kallio
+contact_mail: Esa.Kallio@fmi.fi
+---
+
+
+Europe prepares to embark on exciting journeys about the vast space of
+our solar system. Yet, an integrated framework for better processing of
+the data we would get back from such missions is needed before takeoff.
+IMPEx prepares to deliver just that.
+
+ Look into sky and sometimes you see Jupiter; the fifth planet from the
+Sun and the largeset planet within the Solar System, Jupiter is amongst
+the foreseen destinations for future European space exploration
+missions. Together with Mercury, Venus, Mars, Saturn and Titan, the gas
+giant is set to be approached by European spacecraft on missions to
+expand our understanding of the Solar System.
+
+ However, in the past, scientific return on even the most expensive and
+exciting space exploration missions has been limited as a result of the
+lack of an integrated framework for the processing of the data that are
+returned to Earth.
+
+ The IMPEx project addresses this shortfall, thereby adding value to the
+European exploration endeavours. IMPEx is aimed at the creation of an
+integrated framework where data from space missions will be
+interconnected to numerical models providing a possibility 1) to
+simulate planetary phenomena and interpret spacecraft measurements; 2)
+to test and improve models versus experimental data; 3) to fill caps in
+measurements by appropriate modelling runs; 4) to solve technological
+tasks regarding mission operations, including preparation on new
+missions. Via its infrastructure, IMPEx will enhance the efficiency of
+space mission data exploitation for scientific research, and make the
+existing data and computational models available for the broad planetary
+science community. Thereby researchers who may not themselves be part of
+the space mission teams can benefit from such mission too. That will
+promote the contribution of European space assets to overall scientific
+and technological knowledge.
+
+ Source: European Communities, 2011

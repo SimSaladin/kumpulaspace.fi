@@ -1,0 +1,36 @@
+---
+title: E-SQUID - Development of SQUID-based Multiplexers for Large Infrared-to-X-ray
+      Imaging Detector Arrays in Astronomical Research from Space
+contact: Dr. Juhani Huovelin
+contact_mail: Juhani.Huovelin@helsinki.fi
+---
+
+Looking back in the earliest stages of the universe, X-ray sensing devices
+working at temperatures close to absolute zero are indispensable. The E-SQUID
+project will take Europe to the top in this critical technology domain.
+
+Present astrophysics research focuses on solving the mysterious past and
+evolution of the Universe, which can be traced by observations of the most
+distant and faintest objects in the sky. Mission plans seek X-ray sensing
+devices that can detect the details of the faint glow of the first black holes
+and the very hot gas in the early Universe after the Big Bang, and the infrared
+light of cool objects in outer space, which human made devices have not been
+able to detect before. For both of these focus areas of modern astronomy,
+detectors operated at temperatures near absolute zero are by far the only choice
+fulfilling the requirements of science. For such detectors, the best readout
+solution is SQUID – the Superconducting Quantum Interference Device.
+
+This has been recognized by developers of high sensitivity cameras for astronomy
+and other applications all over the world, and a lot of effort is put in on
+squeezing the ultimate performance from such devices. Presently, the European
+level of expertise is also advanced in this area of critical technology, but is
+not yet the state-of-the-art in the world. The goal of E-SQUID is to make
+progress in this area by utilizing the best European expertise, and bridge the
+gap to reach the top.
+
+The practical task includes developing first prototypes of SQUID readout of
+small image arrays in the required wavelengths with the highest possible
+signal-to-noise ratio, and then scaling-up the size by methods that allow
+further upgrades to megapixel size in the future.
+
+Source: European Communities, 2011 
