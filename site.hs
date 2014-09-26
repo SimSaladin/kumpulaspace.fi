@@ -4,6 +4,7 @@ import           Data.Monoid ((<>), mconcat)
 import           Data.List (intercalate)
 import           Data.Functor ((<$>))
 import           Hakyll
+import           Text.Pandoc.Options (WriterOptions(..))
 
 
 --------------------------------------------------------------------------------
@@ -29,23 +30,33 @@ main = hakyll $ do
                 setExtension "html"
 
         compile $ do
-            ctx <- defaultContextWithLang
-            pandocCompiler
-                >>= loadAndApplyTemplate "templates/default.html" ctx
-
-    create ["projects-en.html", "projects-fi.html"] $ do
-        route $ customRoute setLang
-        compile $ do
-            lang     <- getLang
-            projects <- recentFirst =<< loadAll (fromGlob $ "content/projects/*-" ++ lang ++ ".*")
-            defCtx   <- defaultContextWithLang
+            defCtx       <- defaultContextWithLang
+            lang         <- getLang
+            projects     <- recentFirst =<< loadAll (fromGlob $ "content/projects/*-" ++ lang ++ ".*")
+            publications <- loadAll (fromGlob "content/publications/*.pdf")
             let ctx =
                     listField "projects" projectCtx (return projects) <>
-                    constField "title" "Projects" <>
+                    listField "publications" defaultContext (return publications) <>
                     defCtx
-            makeItem ""
-                >>= loadAndApplyTemplate "templates/projects.html" ctx
+            getResourceBody
+                >>= applyAsTemplate ctx
+                >>= return . renderPandocWith myPandocReaderOpt myPandocWriterOpt
                 >>= loadAndApplyTemplate "templates/default.html" ctx
+
+    -- This index should never be served, but act as a notifier of
+    -- misconfiguration.
+    create ["index.html"] $ do
+        route idRoute
+        compile $ makeItem ("This index should be redirected to en/index.html!" :: String)
+
+--------------------------------------------------------------------------------
+projectCtx :: Context String
+projectCtx =
+    dateField "date" "%B %e, %Y" <>
+    defaultContext
+
+myPandocReaderOpt = defaultHakyllReaderOptions
+myPandocWriterOpt = defaultHakyllWriterOptions { writerSectionDivs = True }
 
 -- | 'file-fi.ext' to 'fi/file.ext'
 setLang :: Identifier -> FilePath
@@ -89,9 +100,3 @@ fiFields =
     , ("nav_projects", "Projektit")
     , ("nav_thesis_topics", "Pro gradu aiheita")
     ]
-
---------------------------------------------------------------------------------
-projectCtx :: Context String
-projectCtx =
-    dateField "date" "%B %e, %Y" <>
-    defaultContext

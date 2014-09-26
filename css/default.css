@@ -1,56 +1,106 @@
-body {
-    color: black;
-    font-size: 16px;
-    margin: 0px auto 0px auto;
-    width: 600px;
+a {
+   text-decoration:none;
+   color:rgb(81,2,194);
+}
+a:hover {
+   color:rgb(73,145,145);
+}
+.left {
+   float:left;
+}
+.right {
+   float:right;
+}
+h1, h2 {
+   color:rgb(47, 113, 119);
 }
 
-div#header {
-    border-bottom: 2px solid black;
-    margin-bottom: 30px;
-    padding: 12px 0px 12px 0px;
+#wrapper {
+   background:rgb(226,226,226);
 }
 
-div#logo a {
-    color: black;
-    float: left;
-    font-size: 18px;
-    font-weight: bold;
-    text-decoration: none;
+/* {{{ Header */
+#header {
+   background:rgb(238, 238, 238);
+   overflow:auto;
+   padding-left:9%;
+}
+#logo {
+   float:left;
+   height:6em;
+   margin:0.5em;
+   opacity:0.6;
+}
+#header h1 {
+   display:inline-block;
+   margin:0;
+   padding-top:0.7em;
+   padding-left:7px;
+   color:rgb(79,53,117);
+   font-size:2em;
+}
+#navigation {
+   width:100%;
+   padding:0.5em 0 0 0;
+}
+#navigation a {
+   margin:0 7px;
+   color: rgba(47, 113, 119, 0.7);
+   text-shadow: none;
+   letter-spacing:-0.05rem;
+   white-space:nowrap;
+}
+#navigation a::before {
+   color: #666;
+   content: attr(data-hover);
+   position: absolute;
+   -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+   -moz-transition: -moz-transform 0.3s, opacity 0.3s;
+   transition: transform 0.3s, opacity 0.3s;
+}
+#navigation a:hover::before,
+#navigation a:focus::before {
+   -webkit-transform: scale(0.9);
+   -moz-transform: scale(0.9);
+   transform: scale(0.9);
+   opacity: 0;
+}
+/* }}} */
+
+#content {
+   margin:0 auto;
+   padding:0 3em 8em 1em;
+   max-width:70em;
+   overflow:auto;
+   background:rgb(252,252,252);
+}
+.section {
+   max-width:55em;
+   overflow:auto;
+   margin:0 auto;
+   padding:0 2em 0 0;
 }
 
-div#header #navigation {
-    text-align: right;
-}
 
-div#header #navigation a {
-    color: black;
-    font-size: 18px;
-    font-weight: bold;
-    margin-left: 12px;
-    text-decoration: none;
-    text-transform: uppercase;
+/* {{{ Footer */
+html, body {
+   margin:0;
+   padding:0;
+   height:100%;
 }
-
-div#footer {
-    border-top: solid 2px black;
-    color: #555;
-    font-size: 12px;
-    margin-top: 30px;
-    padding: 12px 0px 12px 0px;
-    text-align: right;
+#wrapper {
+   min-height:100%;
+   position:relative;
 }
-
-h1 {
-    font-size: 24px;
+#footer {
+   box-sizing:border-box;
+   position:absolute;
+   width:100%;
+   height:3em;
+   bottom:0;
+   left:0;
+   background:rgb(207,207,207);
+   padding:2em;
+   font-size:90%;
 }
-
-h2 {
-    font-size: 20px;
-}
-
-div.info {
-    color: #555;
-    font-size: 14px;
-    font-style: italic;
-}
+/* }}} */
