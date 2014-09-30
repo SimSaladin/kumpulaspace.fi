@@ -24,6 +24,7 @@ h1, h2 {
    background:rgb(238, 238, 238);
    overflow:auto;
    padding-left:9%;
+   box-shadow:rgba(0,0,0,0.1) 0 5px 5px 0;
 }
 #logo {
    float:left;
@@ -44,7 +45,8 @@ h1, h2 {
    padding:0.5em 0 0 0;
 }
 #navigation a {
-   margin:0 7px;
+   display:inline-block;
+   margin:7px;
    color: rgba(47, 113, 119, 0.7);
    text-shadow: none;
    letter-spacing:-0.05rem;
@@ -65,6 +67,19 @@ h1, h2 {
    transform: scale(0.9);
    opacity: 0;
 }
+#languages {
+   float:right;
+   margin-top:0.5em;
+   padding-right:9%;
+}
+#languages a {
+   font-size:80%;
+   padding:0.5em;
+   color:rgb(58,58,58);
+}
+#languages a:hover {
+   color:rgb(100,100,100);
+}
 /* }}} */
 
 #content {
@@ -73,20 +88,22 @@ h1, h2 {
    max-width:70em;
    overflow:auto;
    background:rgb(252,252,252);
+   box-shadow:rgba(0,0,0,0.1) 0 4px 4px 0 inset;
+   border-right:1px solid rgb(206, 206, 206);
+   border-left:2px solid rgb(206, 206, 206);
 }
 .section {
    max-width:55em;
    overflow:auto;
    margin:0 auto;
-   padding:0 2em 0 0;
 }
 
-
-/* {{{ Footer */
+/* {{{ wrappers and footer */
 html, body {
    margin:0;
    padding:0;
    height:100%;
+   min-width:520px;
 }
 #wrapper {
    min-height:100%;
@@ -99,8 +116,24 @@ html, body {
    height:3em;
    bottom:0;
    left:0;
-   background:rgb(207,207,207);
    padding:2em;
    font-size:90%;
+   background:rgb(216,216,216);
+   box-shadow:rgba(226,226,226,1) 0 4px 4px 0 inset;
 }
 /* }}} */
+
+/* {{{ Responsive */
+
+@media (max-width: 95em) {
+   #header {
+      padding-left:0;
+   }
+   #languages {
+      padding-right:0;
+   }
+   #content {
+      padding-left:0.2em;
+      padding-right:0.2em;
+   }
+}

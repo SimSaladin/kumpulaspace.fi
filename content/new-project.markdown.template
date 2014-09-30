@@ -4,4 +4,7 @@ contact: Contact name
 contact_mail: contact@mail.com
 ---
 
-Project description body.
+1. *Copy* this file to
+      content/projects/<project_name>-en.markdown
+      AND content/projects/<project_name>-fi.markdown.
+2. Replace contents with project's description.

@@ -2,6 +2,8 @@
 title: Kumpulan avaruuskeskus
 ---
 
+# Kumpulan avaruuskeskus
+
 Kumpulan avaruuskeskus (perustettu 1. tammikuuta 2006) perustuu Ilmatieteen
 laitoksen, Helsingin yliopiston Fysiikan laitoksen ja Aalto-yliopiston
 sähkötekniikan korkeakoulun väliselle yhteistyölle.

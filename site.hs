@@ -20,11 +20,24 @@ main = hakyll $ do
 
     match "templates/*" $ compile templateCompiler
 
-    match "content/**.pdf" $ do
+    match "content/publications/*.pdf" $ do
         route $ gsubRoute "content/" (const "")
-        compile copyFileCompiler
+        compile $
+            copyFileCompiler >>= saveSnapshot "pdfs"
 
-    match (fromRegex "content/.*-(fi|en).(html|markdown|rst)") $ do
+    match "content/*/*.markdown" $ do
+        route $ gsubRoute "content/" (const "") `composeRoutes`
+                customRoute setLang `composeRoutes`
+                setExtension "html"
+        compile $ do
+            ctx <- defaultContextWithLang
+            getResourceBody
+                >>= applyAsTemplate ctx
+                >>= return . renderPandocWith myPandocReaderOpt myPandocWriterOpt
+                >>= loadAndApplyTemplate "templates/default.html" ctx
+                >>= relativizeUrls
+
+    match "content/*.markdown" $ do
         route $ gsubRoute "content/" (const "") `composeRoutes`
                 customRoute setLang `composeRoutes`
                 setExtension "html"
@@ -33,7 +46,7 @@ main = hakyll $ do
             defCtx       <- defaultContextWithLang
             lang         <- getLang
             projects     <- recentFirst =<< loadAll (fromGlob $ "content/projects/*-" ++ lang ++ ".*")
-            publications <- loadAll (fromGlob "content/publications/*.pdf")
+            publications <- loadAllSnapshots "publications/*" "pdfs"
             let ctx =
                     listField "projects" projectCtx (return projects) <>
                     listField "publications" defaultContext (return publications) <>
@@ -42,12 +55,7 @@ main = hakyll $ do
                 >>= applyAsTemplate ctx
                 >>= return . renderPandocWith myPandocReaderOpt myPandocWriterOpt
                 >>= loadAndApplyTemplate "templates/default.html" ctx
-
-    -- This index should never be served, but act as a notifier of
-    -- misconfiguration.
-    create ["index.html"] $ do
-        route idRoute
-        compile $ makeItem ("This index should be redirected to en/index.html!" :: String)
+                >>= relativizeUrls
 
 --------------------------------------------------------------------------------
 projectCtx :: Context String
