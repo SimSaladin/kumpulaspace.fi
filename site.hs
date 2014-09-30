@@ -46,7 +46,7 @@ main = hakyll $ do
             defCtx       <- defaultContextWithLang
             lang         <- getLang
             projects     <- recentFirst =<< loadAll (fromGlob $ "content/projects/*-" ++ lang ++ ".*")
-            publications <- loadAllSnapshots "publications/*" "pdfs"
+            publications <- loadAllSnapshots "content/publications/*" "pdfs"
             let ctx =
                     listField "projects" projectCtx (return projects) <>
                     listField "publications" defaultContext (return publications) <>
@@ -56,6 +56,10 @@ main = hakyll $ do
                 >>= return . renderPandocWith myPandocReaderOpt myPandocWriterOpt
                 >>= loadAndApplyTemplate "templates/default.html" ctx
                 >>= relativizeUrls
+
+    create [".htaccess"] $ do
+        route idRoute
+        compile $ makeItem ("Redirect 301 /test/index.html /test/en/" :: String)
 
 --------------------------------------------------------------------------------
 projectCtx :: Context String
