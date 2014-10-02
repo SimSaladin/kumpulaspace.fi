@@ -46,10 +46,10 @@ main = hakyll $ do
             defCtx       <- defaultContextWithLang
             lang         <- getLang
             projects     <- recentFirst =<< loadAll (fromGlob $ "content/projects/*-" ++ lang ++ ".*")
-            publications <- loadAllSnapshots "content/publications/*" "pdfs"
+            publications <- loadAllSnapshots "content/publications/*" "pdfs" :: Compiler [Item CopyFile]
             let ctx =
                     listField "projects" projectCtx (return projects) <>
-                    listField "publications" defaultContext (return publications) <>
+                    listField "publications" defaultContext (return $ map (fmap $ const "") publications) <>
                     defCtx
             getResourceBody
                 >>= applyAsTemplate ctx

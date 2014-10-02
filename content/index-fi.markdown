@@ -10,7 +10,7 @@ sähkötekniikan korkeakoulun väliselle yhteistyölle.
 
 Keskus sijaitsee Kumpulan ja Otaniemen kampuksilla ([katso kartta](map.html)).
 
-## Yhteystiedot
+# Yhteystiedot
 
 Peter Johansson, astrofysiikan apulaisprofessori  
 Helsingin yliopisto, Fysiikan laitos
@@ -19,7 +19,7 @@ PL 64, 00014 Helsingin yliopisto
 Puh: (+358) 2941 51211
 s-posti: Peter.Johansson@helsinki.fi
 
-## Linkkejä
+# Linkkejä
    
 [FMI Avaruustutkimus](http://space.dmi.fi)
 

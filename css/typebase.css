@@ -86,6 +86,7 @@ code {
 /* Leading paragraph text */
 .lead {
   font-size: 1.414rem;
+  line-height:1.8rem;
 }
 /* Hug a the block above you */
 .hug {

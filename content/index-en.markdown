@@ -2,7 +2,7 @@
 title: Home
 ---
 
-# Kumpula Space Centre
+# Kumpula Space Centre { .col-3-a }
 
 Kumpula Space Centre (established January 1, 2006) is based on collaboration
 between the Finnish Meteorological Institute,the Department of Physics of the
@@ -11,7 +11,7 @@ University.
 
 The Centre is located at Kumpula and Otaniemi Campus ([see map](map.html)).
 
-## Contact
+# Contact { .col-3-b }
 
 Peter Johansson, Associate Professor of Astrophysics<br/>
 University of Helsinki, Department of Physics<br/>
@@ -21,7 +21,7 @@ Finland<br/>
 Tel: (+358) 2941 51211<br/>
 e-mail: <Peter.Johansson@helsinki.fi>
 
-## Links
+# Links { .col-3-b }
    
 - [FMI Space Sesearch](http://space.dmi.fi)
 - [UH Space Physics](http://theory.physics.helsinki.fi/~space)
