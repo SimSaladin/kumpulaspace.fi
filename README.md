@@ -4,7 +4,7 @@
 This site is built on Hakyll, but you do not need to know Hakyll to make even
 big changes in the site, as explained in the next section.
 
-## Modifying the site (the easy way)
+## Modifications - Getting Started
 
 Modifying the site is a four-step progress:
 
@@ -34,9 +34,7 @@ and then commit as normal. Note that multilingual pages are not enforced, and
 there is (curretly) no failover in languages that are not supported. so remember
 to add the content in all languages you want to support!
 
-## Easy modifications
-
-General notes:
+Some general notes:
 
 - Almost all content is in content/ subdirectory. All files with the `.markdown`
   extension are rendered with the default layout, and `.pdf`'s are copied as-is.
@@ -75,8 +73,8 @@ General notes:
 
 # More technical
 
-**This section is relevant only if the build executable needs to be
-recompiled.**
+**This and below sections are relevant only if hakyll executable needs to be
+recompiled, or the site installed on a new host.**
 
 The package installs fine with cabal (`cabal install`). However, you will most
 likely want to link statically (minimizes server dependencies):
