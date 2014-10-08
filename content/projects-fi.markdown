@@ -5,5 +5,8 @@ title: Projektit
 # Projektit
 
 $for(projects)$
-- <a href="$url$">$title$</a> - $contact$ (<a href="mailto:$contact_mail$">$contact_mail$</a>)
+## $title$
+
+> [Lisää tietoa...]($url$)<br/>
+> Ota yhteyttä: $contact$ (<a href="mailto:$contact_mail$">$contact_mail$</a>)
 $endfor$
