@@ -17,11 +17,11 @@ Of course, you can skip the first step if you already have the repository
 cloned. Here is an example modification session (this is completely cli, but you
 can modify the files in whatever editor you want):
 
-    git clone user@server:/srv/kumpulaspace
-    cd kumpulaspace
+    git clone h209.it.helsinki.fi:/var/www/ksc
+    cd ksc
     nano content/index-en.markdown # make changes...
-    git commit -am "Fixed a typo in index-en.markdown"  # Remember to add a message
-    git push user@server:/srv/kumpulaspace
+    git commit -am "Changed something"
+    git push
 
 In the last step the git hooks installed on the server check that your
 modifications were sensible, then regenerates the site html. **git push will
