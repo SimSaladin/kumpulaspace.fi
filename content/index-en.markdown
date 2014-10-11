@@ -1,6 +1,26 @@
 ---
-title: Home
+title: Kumpula Space Centre
 ---
+
+<div class="three-images left">
+
+![&nbsp;](/images/physicum.png)
+
+![&nbsp;](/images/ilmatieteenlaitos.jpg)
+
+![&nbsp;](/images/aalto.jpg)
+
+</div>
+
+<div class="three-images right">
+
+![&nbsp;](/images/aurinkotuuli.jpg)
+
+![&nbsp;](/images/solar_system.jpg)
+
+![&nbsp;](/images/galaksi.jpg)
+
+</div>
 
 # Kumpula Space Centre
 
@@ -23,6 +43,7 @@ e-mail: <Peter.Johansson@helsinki.fi>
 
 # Links
    
-- [FMI Space Sesearch](http://space.dmi.fi)
+- [FMI Space Sesearch](http://space.fmi.fi)
 - [UH Space Physics](http://theory.physics.helsinki.fi/~space)
 - [UH Astrophysics and Cosmology](http://www.physics.helsinki.fi/tutkimus/afo)
+- [Aalto school of engineering](http://eng.aalto.fi/en)

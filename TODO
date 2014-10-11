@@ -1,19 +1,23 @@
 
 [ ] Logo - väri
 [ ] favicon
-[X] language links
 [ ] deployment
 
-== Etusivu
+[X] language links
+[ ] nav i18n parameterize from file
 
-[ ] kuvat left: physicum - fmi - aalto
-[ ] kuvat right:
+== Etusivu
+[ ] maps aalto & kumpula
+
+[X] kuvat left:
+   - physicum
+   - fmi
+   - aalto
+[X] kuvat right:
    - "space physics" (aurinkotuuli)
    - "planeetta" (aurinkokunta)
    - "astrofysiikka" (galaxi)
-
-[ ] maps aalto & kumpula
-[ ] links ( ++ aalto school of engineering)
+[X] links ( ++ aalto school of engineering)
 
 
 == Organisaatio
@@ -22,20 +26,20 @@
 
 == Projects
 
-Fields:
+[ ] Fields:
    - title:
    - category:
    - status: TRUE | FALSE
    - contact:
    - contact_email:
 
-Kaukokartoitus - Space Physics - Astrophysics - Cosmology
+[ ] kategoriat esim. Kaukokartoitus - Space Physics - Astrophysics - Cosmology
 
 
 == Publications
 
-[ ] Ehkä joku kuva
-[ ] is pdf!
+[X] Ehkä joku kuva
+[X] is pdf!
 
 
 == Undergraduate education

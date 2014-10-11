@@ -2,6 +2,26 @@
 title: Kumpulan avaruuskeskus
 ---
 
+<div class="three-images left">
+
+![&nbsp;](/images/physicum.png)
+
+![&nbsp;](/images/ilmatieteenlaitos.jpg)
+
+![&nbsp;](/images/aalto.jpg)
+
+</div>
+
+<div class="three-images right">
+
+![&nbsp;](/images/aurinkotuuli.jpg)
+
+![&nbsp;](/images/solar_system.jpg)
+
+![&nbsp;](/images/galaksi.jpg)
+
+</div>
+
 # Kumpulan avaruuskeskus
 
 Kumpulan avaruuskeskus (perustettu 1. tammikuuta 2006) perustuu Ilmatieteen
@@ -21,8 +41,7 @@ s-posti: Peter.Johansson@helsinki.fi
 
 # Linkkejä
    
-[FMI Avaruustutkimus](http://space.dmi.fi)
-
-[HY Avaruusfysiikka](http://theory.physics.helsinki.fi/~space)
-
-[HY Alkeishiukkasfysiikka ja astrofysiikka](http://www.physics.helsinki.fi/tutkimus/afo)
+- [FMI Avaruustutkimus](http://space.fmi.fi)
+- [HY Avaruusfysiikka](http://theory.physics.helsinki.fi/~space)
+- [HY Alkeishiukkasfysiikka ja astrofysiikka](http://www.physics.helsinki.fi/tutkimus/afo)
+- [Aalto Insinööritieteiden korkeakoulu](http://eng.aalto.fi/fi)
