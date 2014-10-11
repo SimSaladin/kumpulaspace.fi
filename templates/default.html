@@ -13,18 +13,19 @@
       <div id="wrapper">
          <div id="header">
             <div id="languages">
-               <a href="/en">In English</a>
-               <a href="/fi">Suomeksi</a>
+            $for(lang_choices)$
+               <a href="$url$">$title$</a>
+            $endfor$
             </div>
 
             <img id="logo" src="/images/logo.svg" alt="">
             <h1>$main_title$</h1>
             <div id="navigation">
                <a href="/$lang$" data-hover="$nav_home$">$nav_home$</a>
-               <a href="/$lang$/organisation.html" data-hover="$nav_organisation$">$nav_organisation$</a>
-               <a href="/$lang$/projects.html" data-hover="$nav_projects$">$nav_projects$</a>
-               <a href="/$lang$/publications.html" data-hover="$nav_publications$">$nav_publications$</a>
-               <a href="/$lang$/thesis_topics.html" data-hover="$nav_thesis_topics$">$nav_thesis_topics$</a>
+               <a href="/$lang$/organisation.html">$nav_organisation$</a>
+               <a href="/$lang$/projects.html">$nav_projects$</a>
+               <a href="/$lang$/publications.html">$nav_publications$</a>
+               <a href="/$lang$/thesis_topics.html">$nav_thesis_topics$</a>
             </div>
          </div>
 
