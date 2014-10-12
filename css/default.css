@@ -35,7 +35,7 @@ h1, h2, h3, h4, h5, h6 {
    padding:0.6em 1em;
    min-height:7.5em;
    background:rgb(36,36,36);
-   background-image:url(/images/binding_dark_@2X.png);
+   background-image:url(/images/stressed_linen_@2X.png);
 }
 #header h1 {
    display:block;
@@ -125,9 +125,19 @@ html, body {
 .three-images {
    overflow:auto;
 }
+.three-images.left {
+   margin-left:1em;
+}
+.three-images.right {
+   margin-right:1em;
+}
 .three-images img {
    width:100%;
    float:left;
+   opacity:0.7;
+}
+.three-images img:hover {
+   opacity:1;
 }
 @media (max-width: 65em) {
    .three-images {
@@ -136,6 +146,9 @@ html, body {
    .three-images .figure, .three-images > img {
       float: left;
       width:33.33333%;
+   }
+   .small-hide {
+      display:none;
    }
 }
 @media (min-width: 65em) {
