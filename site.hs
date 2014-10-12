@@ -68,11 +68,12 @@ main = hakyll $ do
 -- | Like defaultContext, but adds @lang@ field from filename.
 defaultContextWithLang :: Compiler (Context String)
 defaultContextWithLang = do
-    lang <- getLang
-    url  <- getUnderlying >>= liftM (fromMaybe "") . getRoute
+    lang      <- getLang
+    templangs <- mconcat . map (uncurry constField) <$> templateLanguages lang
+    url       <- getUnderlying >>= liftM (fromMaybe "") . getRoute
     return $ constField "lang" lang
         <> languagesField "lang_choices" url lang
-        <> navigationFieldsFor lang
+        <> templangs
         <> defaultContext
 
 projectCtx :: Context String
@@ -125,30 +126,6 @@ setLang ident = let xs          = splitAll "-" $ toFilePath ident
 
 -- * Templates i18n
 
-templateLanguages :: String -> Languages
-templateLanguages lang = read <$> unsafeCompiler (readFile $ "templates-" ++ lang ++ ".conf")
-
--- | Navigation links i18n
-navigationFieldsFor :: String -> Context String
-navigationFieldsFor l = map (uncurry constField) $ case l of
-    "en" -> enFields
-    "fi" -> fiFields
-    _    -> error ("Unknown language: " ++ l)
-
-enFields =
-    [ ("main_title", "Kumpula Space Centre")
-    , ("nav_home", "Home")
-    , ("nav_organisation", "Organisation")
-    , ("nav_publications", "Publications")
-    , ("nav_projects", "Projects")
-    , ("nav_thesis_topics", "Topics for MSc Theses")
-    ]
-
-fiFields =
-    [ ("main_title", "Kumpulan Avaruuskeskus")
-    , ("nav_home", "Pääsivu")
-    , ("nav_organisation", "Organisaatio")
-    , ("nav_publications", "Julkaisut")
-    , ("nav_projects", "Projektit")
-    , ("nav_thesis_topics", "Pro gradu aiheita")
-    ]
+templateLanguages :: String -> Compiler Languages
+templateLanguages lang =
+    read <$> unsafeCompiler (readFile $ "templates-" ++ lang ++ ".conf")
