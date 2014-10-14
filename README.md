@@ -4,22 +4,24 @@
 This site is built on Hakyll, but you do not need to know Hakyll to make even
 big changes in the site, as explained in the next section.
 
-## Modifications - Getting Started
+## How to modify the site
 
-Modifying the site is a four-step progress:
+### Getting Started
 
-1. `git clone` the repository
-2. Modify files (see section "Easy Modifications")
-3. `git commit` changes
-4. `git push` changes
+Modifying the site *content* is simple:
+
+1. `git clone`
+2. Modify files (see subsections for details)
+3. `git commit`
+4. `git push`
 
 Of course, you can skip the first step if you already have the repository
-cloned. Here is an example modification session (this is completely cli, but you
-can modify the files in whatever editor you want):
+cloned. Here is an example modification session (you can modify the files in
+whatever editor you want):
 
     git clone h209.it.helsinki.fi:/var/www/ksc
     cd ksc
-    nano content/index-en.markdown # make changes...
+    $EDITOR content/index-en.markdown # make changes...
     git commit -am "Changed something"
     git push
 
@@ -42,39 +44,41 @@ Some general notes:
 - Finnish and English pages are given -en and -fi suffixes respectively (e.g.
   index-en.markdown). **Language suffix is mandadory.**
 
-### Modifying existing pages
+### 1. Modifying existing pages
 
 - You can modify any file under `content/` and its subdirectories.
 - Default template in templates/default.html is also modifiable, though it
   should normally not be necessary to modify it. Only if you're 1) adding a new
   language or 2) modifying the top navigation bar.
 
-### Adding new pages
+### 2. Adding new pages
 
-- You can add new pages **directly** under content-folder:
+- Add new pages **top-level** pages directly under content-folder:
   Adding a file content/mynewpage-fi.markdown results in /fi/mynewpage.html on
-  the site.
-- You can add new projects under content/projects:
+  the site, and so on.
+- Add new **projects** under content/projects:
   content/projects/2014-01-01-newproject-fi.markdown results in
-  /fi/2014-01-01-newproject.html. **The index in /fi/projects.html is
-  automatically updated.**
+  /fi/2014-01-01-newproject.html. *The index in /fi/projects.html is
+  automatically updated.*
 - Add new publication pdf's under content/publications.
 
-### New assets
+### 3. Adding images
 
 - Add images under `images/`. Then include them (in markdown):
   `![/images/myimage.jpg]`. The first slash is important! Image format doesn't
   matter, though browser support varies with rare formats.
 
-### Style modifications (CSS)
+### 4. Layout and style (HTML templates and CSS)
 
+- There is only one html template (`templates/default.html`), which is used to
+  render every page.
 - All CSS is in css/*.css files
 - "interesting" CSS is in css/default.css, typography in css/typebase.css.
 
 # More technical
 
-**This and below sections are relevant only if hakyll executable needs to be
-recompiled, or the site installed on a new host.**
+**Everything below this in this document is relevant only if the executable
+needs to be recompiled, or the site installed on a new host.**
 
 The package installs fine with cabal (`cabal install`). However, you will most
 likely want to link statically (minimizes server dependencies):
@@ -96,6 +100,8 @@ going):
 
 
 ## Install on a CentOS host
+
+This is for reference only, and probably not 100% correct.
 
 **Packages:**
 

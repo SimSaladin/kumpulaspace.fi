@@ -1,8 +1,6 @@
 
 == General
-[ ] favicon
-[ ] deployment
-[ ] nav i18n parameterize from file
+[ ] deployment (git hooks)
 
 == Projects
 [ ] Fields:
