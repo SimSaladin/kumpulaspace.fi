@@ -1,64 +1,30 @@
 
-[ ] Logo - väri
+== General
 [ ] favicon
 [ ] deployment
-
-[X] language links
 [ ] nav i18n parameterize from file
 
-== Etusivu
-[X] maps aalto & kumpula
-
-[X] kuvat left:
-   - physicum
-   - fmi
-   - aalto
-[X] kuvat right:
-   - "space physics" (aurinkotuuli)
-   - "planeetta" (aurinkokunta)
-   - "astrofysiikka" (galaxi)
-[X] links ( ++ aalto school of engineering)
-
-
-== Organisaatio
-
-[X] Ehkä kuva (logo?)
-
 == Projects
-
 [ ] Fields:
    - title:
    - category:
    - status: TRUE | FALSE
    - contact:
    - contact_email:
-
 [ ] kategoriat esim. Kaukokartoitus - Space Physics - Astrophysics - Cosmology
 
-
-== Publications
-
-[X] Ehkä joku kuva
-[X] is pdf!
-
-
 == Undergraduate education
-
 [ ] Courses on offer
    - at UH Physics
    - at Aalto
    - level: Basic - Intermediate - Advanced
-
 [ ] Thesis topics: BSc-thesis - MSc-thesis
 
 
 == Postgraduate education
-
 [ ] Number of graduate students at KSC: UH - fmi - Aalto
 [ ] Courses suitable for graduate studies: UH - Aalto
-
 [ ] Linkki: Papu graduate school
 
 == Public outreach
-
 [ ] List of people to contact
