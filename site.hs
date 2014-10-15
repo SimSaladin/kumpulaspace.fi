@@ -26,45 +26,70 @@ main = hakyll $ do
 
     match "templates/*" $ compile templateCompiler
 
-    match "content/publications/*.pdf" $ do
-        route $ gsubRoute "content/" (const "")
-        compile $
-            copyFileCompiler >>= saveSnapshot "pdfs"
-
-    match "content/*/*.markdown" $ do
-        route $ gsubRoute "content/" (const "") `composeRoutes`
-                customRoute setLang `composeRoutes`
-                setExtension "html"
-        compile $ do
-            ctx <- defaultContextWithLang
-            getResourceBody
-                >>= applyAsTemplate ctx
-                >>= return . renderPandocWith myPandocReaderOpt myPandocWriterOpt
-                >>= loadAndApplyTemplate "templates/default.html" ctx
-                >>= relativizeUrls
-
-    match "content/*.markdown" $ do
-        route $ gsubRoute "content/" (const "") `composeRoutes`
-                customRoute setLang `composeRoutes`
-                setExtension "html"
-
-        compile $ do
-            ctx' <- defaultContextWithLang
-            let ctx =
-                    listField "projects" projectCtx projects
-                    <> listField "publications" defaultContext publications
-                    <> ctx'
-            getResourceBody
-                >>= applyAsTemplate ctx
-                >>= return . renderPandocWith myPandocReaderOpt myPandocWriterOpt
-                >>= loadAndApplyTemplate "templates/default.html" ctx
-                >>= relativizeUrls
-
     create [".htaccess"] $ do
         route idRoute
         compile $ makeItem ("Redirect 301 /test/index.html /test/en/" :: String)
 
+    -- content/ -------------------------------------
+
+    projectTagsEn <- buildTags "content/projects/*-en.markdown" (fromCapture "project-tags/*-en.html")
+    projectTagsFi <- buildTags "content/projects/*-fi.markdown" (fromCapture "project-tags/*-fi.html")
+    tagsRules projectTagsEn $ renderTaggedProjects "templates/projects-en.html"
+    tagsRules projectTagsFi $ renderTaggedProjects "templates/projects-fi.html"
+
+    match "content/publications/*.pdf" $ do
+        route $ gsubRoute "content/" (const "")
+        compile $ copyFileCompiler >>= saveSnapshot "pdfs"
+
+    match "content/*/*.markdown" $ do
+        route contentRoute
+        compile $ do
+            ctx <- defaultContextWithLang
+            getResourceBody >>= applyAsContent ctx
+
+    match "content/*.markdown" $ do
+        route contentRoute
+        compile $ do
+
+            lang <- getLang
+            taglist <- renderTagList $ if lang == "fi"
+                           then projectTagsFi
+                           else projectTagsEn
+                           -- TODO ^ not extendable; should use @Languages@
+
+            ctx' <- defaultContextWithLang
+            let ctx = listField "projects" projectCtx projects
+                    <> listField "publications" defaultContext publications
+                    <> constField "taglist" taglist
+                    <> ctx'
+
+            getResourceBody >>= applyAsContent ctx
+
+renderTaggedProjects :: Identifier -> String -> Pattern -> Rules ()
+renderTaggedProjects templ tag pat = do
+    route idRoute
+    compile $ do
+        ctx' <- defaultContextWithLang
+        let ctx = listField "projects" projectCtx (loadAll pat)
+                <> constField "tag" tag
+                <> ctx'
+        makeItem ""
+            >>= loadAndApplyTemplate templ ctx 
+            >>= applyAsContent ctx
+
 --------------------------------------------------------------------------------
+
+applyAsContent :: Context String -> Item String -> Compiler (Item String)
+applyAsContent ctx item = 
+    applyAsTemplate ctx item
+    >>= return . renderPandocWith myPandocReaderOpt myPandocWriterOpt
+    >>= loadAndApplyTemplate "templates/default.html" ctx
+    >>= relativizeUrls
+
+contentRoute :: Routes
+contentRoute = gsubRoute "content/" (const "") `composeRoutes`
+                customRoute setLang `composeRoutes`
+                setExtension "html"
 
 defaultContextWithLang :: Compiler (Context String)
 defaultContextWithLang = do

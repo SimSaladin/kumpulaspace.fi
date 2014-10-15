@@ -150,6 +150,10 @@ html, body {
    }
 }
 
+ul.padded > li:not(first-child) {
+   margin-top:0.8em;
+}
+
 /* {{{ footer */
 #footer {
    position:absolute;
