@@ -4,5 +4,5 @@ title: Public outreach
 
 # People to contact
 
-> Name
+> Name\
 > email@domain.com

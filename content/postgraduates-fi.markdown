@@ -1,5 +1,13 @@
 ---
-title: Opetusta jatko-opiskelijoille
+title: Opetus jatko-opiskelijoille
 ---
 
-# Opetusta jatko-opiskelijoille
+# Jatko-opiskelijat
+
+Jato-opiskelijoiden määrä KSC:ssä:
+
+- HY: X
+- FMI: Y
+- Aalto: Z
+
+[PAPU](http://blogs.helsinki.fi/papu-dp/)

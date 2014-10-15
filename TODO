@@ -3,7 +3,7 @@
 [ ] deployment (git hooks)
 
 == Projects
-[ ] Fields:
+[X] Fields:
    - title:
    - category:
    - status: TRUE | FALSE
@@ -22,7 +22,3 @@
 == Postgraduate education
 [ ] Number of graduate students at KSC: UH - fmi - Aalto
 [ ] Courses suitable for graduate studies: UH - Aalto
-[ ] Linkki: Papu graduate school
-
-== Public outreach
-[ ] List of people to contact

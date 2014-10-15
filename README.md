@@ -53,13 +53,29 @@ Some general notes:
 
 ### 2. Adding new pages
 
-- Add new pages **top-level** pages directly under content-folder:
+- **Top-level** pages directly under content-folder:
   Adding a file content/mynewpage-fi.markdown results in /fi/mynewpage.html on
   the site, and so on.
-- Add new **projects** under content/projects:
+- **Projects** under content/projects:
   content/projects/2014-01-01-newproject-fi.markdown results in
   /fi/2014-01-01-newproject.html. *The index in /fi/projects.html is
   automatically updated.*
+    
+  New project template (place in
+  `content/projects/YYYY-MM-DD-sometitle-fi.markdown` and
+  `content/projects/YYYY-MM-DD-sometitle-en.markdown`)
+
+        ----
+        title: Some project
+        contact: Contact Person
+        contact_mail: contact.person@mail.com
+        homepage: http://example.com
+        category:
+        status:
+        ----
+
+        Project description here.
+
 - Add new publication pdf's under content/publications.
 
 ### 3. Adding images
