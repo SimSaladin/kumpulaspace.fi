@@ -2,6 +2,9 @@
 title: ECLAT - European Cluster Assimilation Technology
 contact: Dr. Kirsti Kauristie
 contact_mail: Kirsti.Kauristie@fmi.fi
+homepage: http://theproject.com
+category: (set category here)
+status: Has ended
 ---
 
 The European Cluster Assimilation Technology (ECLAT) programme will

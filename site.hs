@@ -49,14 +49,11 @@ main = hakyll $ do
                 setExtension "html"
 
         compile $ do
-            defCtx       <- defaultContextWithLang
-            lang         <- getLang
-            projects     <- recentFirst =<< loadAll (fromGlob $ "content/projects/*-" ++ lang ++ ".*")
-            publications <- liftM reverse $ loadAllSnapshots "content/publications/*" "pdfs" :: Compiler [Item CopyFile]
+            ctx' <- defaultContextWithLang
             let ctx =
-                    listField "projects" projectCtx (return projects) <>
-                    listField "publications" defaultContext (return $ map (fmap $ const "") publications) <>
-                    defCtx
+                    listField "projects" projectCtx projects
+                    <> listField "publications" defaultContext publications
+                    <> ctx'
             getResourceBody
                 >>= applyAsTemplate ctx
                 >>= return . renderPandocWith myPandocReaderOpt myPandocWriterOpt
@@ -69,7 +66,6 @@ main = hakyll $ do
 
 --------------------------------------------------------------------------------
 
--- | Like defaultContext, but adds @lang@ field from filename.
 defaultContextWithLang :: Compiler (Context String)
 defaultContextWithLang = do
     lang      <- getLang
@@ -82,8 +78,20 @@ defaultContextWithLang = do
 
 projectCtx :: Context String
 projectCtx =
-    dateField "date" "%B %e, %Y" <>
+    dateField "year" "%Y" <>
     defaultContext
+
+-- Items
+
+projects :: Compiler [Item String]
+projects = do
+    lang <- getLang
+    recentFirst =<< loadAll (fromGlob $ "content/projects/*-" ++ lang ++ ".*")
+
+-- | The body is empty
+publications :: Compiler [Item String]
+publications = map (fmap $ const "") . reverse
+    <$> (loadAllSnapshots "content/publications/*" "pdfs" :: Compiler [Item CopyFile])
 
 -- Pandoc rendering
 
