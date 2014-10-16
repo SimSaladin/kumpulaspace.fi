@@ -5,6 +5,7 @@ import           Data.Maybe (fromMaybe)
 import           Data.Monoid ((<>), mconcat)
 import           Data.List (intercalate)
 import           Data.Functor ((<$>))
+import           Data.String
 import           Hakyll
 import           Text.Pandoc.Options (ReaderOptions(..), WriterOptions(..))
 
@@ -39,10 +40,12 @@ main = hakyllWith myConfig $ do
     tagsRules projectTagsFi $ renderTagged projectCtx "templates/projects-fi.html"
 
     -- Course tags
-    coursesEn <- buildTags "content/courses/*/*-en.markdown" (fromCapture "course-tags/*-en.html")
-    coursesFi <- buildTags "content/courses/*/*-fi.markdown" (fromCapture "course-tags/*-fi.html")
-    tagsRules coursesEn $ renderTagged defaultContext "templates/courses-en.html"
-    tagsRules coursesFi $ renderTagged defaultContext "templates/courses-fi.html"
+    [ucTags, pcTags] <- forM ["undergrad", "postgrad"] $ \sub ->
+        forM ["en", "fi"] $ \lang -> do
+            tags <- buildTags (fromString $ "content/courses/" ++ sub ++ "/*-" ++ lang ++ ".markdown")
+                              (fromCapture $ fromString $ "course-tags-" ++ sub ++ "/*-" ++ lang ++ ".html")
+            tagsRules tags $ renderTagged defaultContext $ fromFilePath $ "templates/courses-" ++ lang ++ ".html"
+            return tags
 
     match "content/publications/*.pdf" $ do
         route $ gsubRoute "content/" (const "")
@@ -60,8 +63,12 @@ main = hakyllWith myConfig $ do
 
             lang <- getLang
             projectTags <- renderTagList $ if lang == "fi" then projectTagsFi else projectTagsEn
-            courseTags  <- renderTagList $ if lang == "fi" then coursesFi else coursesEn
                            -- TODO ^ should use @Languages@ or smth
+
+            let langIndex = if lang == "fi" then 1 else 0
+
+            ucTagsList <- renderTagList $ ucTags !! langIndex
+            pcTagsList <- renderTagList $ pcTags !! langIndex
 
             ctx' <- defaultContextWithLang
             let ctx = listField "items" projectCtx projects
@@ -69,7 +76,8 @@ main = hakyllWith myConfig $ do
                     <> constField "project_tags" projectTags
                     <> listField "undergrad_courses" defaultContext (itemsAt "courses/undergrad")
                     <> listField "postgrad_courses" defaultContext (itemsAt "courses/postgrad")
-                    <> constField "course_tags" courseTags
+                    <> constField "course_undergrad_tags" ucTagsList
+                    <> constField "course_postgrad_tags" pcTagsList
                     <> listField "bsc_topics" defaultContext (itemsAt "thesis/bsc")
                     <> listField "msc_topics" defaultContext (itemsAt "thesis/msc")
                     <> ctx'

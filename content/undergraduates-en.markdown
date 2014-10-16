@@ -6,7 +6,7 @@ title: Undergraduate education
 
 ## Courses
 
-$course_tags$
+$course_undergrad_tags$
 
 $for(undergrad_courses)$
 - [$title$]($url$) $if(tags)$ ($tags$) $endif$

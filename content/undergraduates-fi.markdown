@@ -4,7 +4,22 @@ title: Opetusta perustutkinto-opiskelijoille
 
 # Opetusta perustutkinto-opiskelijoille
 
-- Kurssit
-   * HY Fysiikka, Aalto
-   * Basic, intermediate, advanced
-- thesis topics
+## Kurssit
+
+$course_undergrad_tags$
+
+$for(undergrad_courses)$
+- [$title$]($url$) $if(tags)$ ($tags$) $endif$
+$endfor$
+
+## BSc Thesis topics
+
+$for(bsc_topics)$
+- [$title$]($url$) $if(tags)$ ($tags$) $endif$
+$endfor$
+
+## MSc Thesis topics
+
+$for(msc_topics)$
+- [$title$]($url$) $if(tags)$ ($tags$) $endif$
+$endfor$
