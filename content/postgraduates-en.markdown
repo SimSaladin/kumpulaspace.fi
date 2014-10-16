@@ -12,3 +12,8 @@ Number of graduate students at KSC:
 
 [PAPU doctoral programme](http://blogs.helsinki.fi/papu-dp/)
 
+## Courses suitable for graduate students
+
+$for(postgrad_courses)$
+- [$title$]($url$) $if(tags)$ ($tags$) $endif$
+$endfor$

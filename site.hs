@@ -11,7 +11,7 @@ import           Text.Pandoc.Options (ReaderOptions(..), WriterOptions(..))
 
 --------------------------------------------------------------------------------
 main :: IO ()
-main = hakyll $ do
+main = hakyllWith myConfig $ do
     match "images/*" $ do
         route   idRoute
         compile copyFileCompiler
@@ -32,16 +32,23 @@ main = hakyll $ do
 
     -- content/ -------------------------------------
 
+    -- Project tags
     projectTagsEn <- buildTags "content/projects/*-en.markdown" (fromCapture "project-tags/*-en.html")
     projectTagsFi <- buildTags "content/projects/*-fi.markdown" (fromCapture "project-tags/*-fi.html")
-    tagsRules projectTagsEn $ renderTaggedProjects "templates/projects-en.html"
-    tagsRules projectTagsFi $ renderTaggedProjects "templates/projects-fi.html"
+    tagsRules projectTagsEn $ renderTagged projectCtx "templates/projects-en.html"
+    tagsRules projectTagsFi $ renderTagged projectCtx "templates/projects-fi.html"
+
+    -- Course tags
+    coursesEn <- buildTags "content/courses/*/*-en.markdown" (fromCapture "course-tags/*-en.html")
+    coursesFi <- buildTags "content/courses/*/*-fi.markdown" (fromCapture "course-tags/*-fi.html")
+    tagsRules coursesEn $ renderTagged defaultContext "templates/courses-en.html"
+    tagsRules coursesFi $ renderTagged defaultContext "templates/courses-fi.html"
 
     match "content/publications/*.pdf" $ do
         route $ gsubRoute "content/" (const "")
         compile $ copyFileCompiler >>= saveSnapshot "pdfs"
 
-    match "content/*/*.markdown" $ do
+    match "content/*/**.markdown" $ do
         route contentRoute
         compile $ do
             ctx <- defaultContextWithLang
@@ -52,25 +59,35 @@ main = hakyll $ do
         compile $ do
 
             lang <- getLang
-            taglist <- renderTagList $ if lang == "fi"
-                           then projectTagsFi
-                           else projectTagsEn
-                           -- TODO ^ not extendable; should use @Languages@
+            projectTags <- renderTagList $ if lang == "fi" then projectTagsFi else projectTagsEn
+            courseTags  <- renderTagList $ if lang == "fi" then coursesFi else coursesEn
+                           -- TODO ^ should use @Languages@ or smth
 
             ctx' <- defaultContextWithLang
-            let ctx = listField "projects" projectCtx projects
+            let ctx = listField "items" projectCtx projects
                     <> listField "publications" defaultContext publications
-                    <> constField "taglist" taglist
+                    <> constField "project_tags" projectTags
+                    <> listField "undergrad_courses" defaultContext (itemsAt "courses/undergrad")
+                    <> listField "postgrad_courses" defaultContext (itemsAt "courses/postgrad")
+                    <> constField "course_tags" courseTags
+                    <> listField "bsc_topics" defaultContext (itemsAt "thesis/bsc")
+                    <> listField "msc_topics" defaultContext (itemsAt "thesis/msc")
                     <> ctx'
 
             getResourceBody >>= applyAsContent ctx
 
-renderTaggedProjects :: Identifier -> String -> Pattern -> Rules ()
-renderTaggedProjects templ tag pat = do
+--------------------------------------------------------------------------------
+
+myConfig :: Configuration
+myConfig = defaultConfiguration
+    { deployCommand = "" }
+
+renderTagged :: Context String -> Identifier -> String -> Pattern -> Rules ()
+renderTagged itemCtx templ tag pat = do
     route idRoute
     compile $ do
         ctx' <- defaultContextWithLang
-        let ctx = listField "projects" projectCtx (loadAll pat)
+        let ctx = listField "items" itemCtx (loadAll pat)
                 <> constField "tag" tag
                 <> ctx'
         makeItem ""
@@ -109,14 +126,17 @@ projectCtx =
 -- Items
 
 projects :: Compiler [Item String]
-projects = do
-    lang <- getLang
-    recentFirst =<< loadAll (fromGlob $ "content/projects/*-" ++ lang ++ ".*")
+projects = itemsAt "projects" >>= recentFirst
 
 -- | The body is empty
 publications :: Compiler [Item String]
 publications = map (fmap $ const "") . reverse
     <$> (loadAllSnapshots "content/publications/*" "pdfs" :: Compiler [Item CopyFile])
+
+itemsAt :: String -> Compiler [Item String]
+itemsAt sub = do
+    lang <- getLang
+    loadAll $ fromGlob $ "content/" ++ sub ++ "/*-" ++ lang ++ ".*"
 
 -- Pandoc rendering
 
