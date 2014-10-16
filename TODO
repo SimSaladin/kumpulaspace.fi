@@ -3,22 +3,22 @@
 [ ] deployment (git hooks)
 
 == Projects
-[X] Fields:
+[!] Fields:
    - title:
    - category:
    - status: TRUE | FALSE
    - contact:
    - contact_email:
-[ ] kategoriat esim. Kaukokartoitus - Space Physics - Astrophysics - Cosmology
+[!] kategoriat esim. Kaukokartoitus - Space Physics - Astrophysics - Cosmology
 
 == Undergraduate education
-[ ] Courses on offer
+[!] Courses on offer
    - at UH Physics
    - at Aalto
    - level: Basic - Intermediate - Advanced
-[ ] Thesis topics: BSc-thesis - MSc-thesis
+[!] Thesis topics: BSc-thesis - MSc-thesis
 
 
 == Postgraduate education
-[ ] Number of graduate students at KSC: UH - fmi - Aalto
-[ ] Courses suitable for graduate studies: UH - Aalto
+[!] Number of graduate students at KSC: UH - fmi - Aalto
+[!] Courses suitable for graduate studies: UH - Aalto
