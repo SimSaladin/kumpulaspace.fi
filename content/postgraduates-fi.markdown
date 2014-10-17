@@ -9,3 +9,9 @@ Jato-opiskelijoiden määrä KSC:ssä:
 - Aalto: Z
 
 [PAPU](http://blogs.helsinki.fi/papu-dp/)
+
+## Kurssit, jotka sopivat jatko-opiskelijoille
+
+$for(postgrad_courses)$
+- [$title$]($url$) $if(tags)$ ($tags$) $endif$
+$endfor$
