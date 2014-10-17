@@ -26,12 +26,12 @@ ja Otaniemen kampuksilla ([katso kartta](https://www.google.fi/maps/place/Aalto+
 
 ## Yhteystiedot
 
-Peter Johansson, astrofysiikan apulaisprofessori  
-Helsingin yliopisto, Fysiikan laitos
+Peter Johansson, astrofysiikan apulaisprofessori<br/>
+Helsingin yliopisto, Fysiikan laitos<br/>
 PL 64, 00014 Helsingin yliopisto
 
-Puh: (+358) 2941 51211
-s-posti: Peter.Johansson@helsinki.fi
+Puh: (+358) 2941 51211<br/>
+s-posti: <Peter.Johansson@helsinki.fi>
 
 ## Linkkejä
    

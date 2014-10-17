@@ -30,8 +30,8 @@ and Otaniemi Campus ([see map](https://www.google.fi/maps/place/Aalto+University
 Peter Johansson, Associate Professor of Astrophysics<br/>
 University of Helsinki, Department of Physics<br/>
 P.O. Box 64, FIN-00014 University of Helsinki<br/>
-Finland<br/>
-<br/>
+Finland
+
 Tel: (+358) 2941 51211<br/>
 e-mail: <Peter.Johansson@helsinki.fi>
 
