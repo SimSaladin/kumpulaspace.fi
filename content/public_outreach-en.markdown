@@ -2,7 +2,8 @@
 title: Public outreach
 ---
 
-# People to contact
-
 > Name\
 > email@domain.com
+
+> Another\
+> person@anotherdomain.com

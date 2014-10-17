@@ -2,8 +2,6 @@
 title: Pro gradu-aiheita
 ---
 
-# Pro gradu-aiheita
-
 Kumpulan avaruuskeskuksen tutkijat ohjaavat pro gradu-töitä seuraavista aiheista
 
 Jos olet kiinnostunut jostakin aiheesta, ota yhteyttä

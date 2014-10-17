@@ -4,7 +4,7 @@ title: Data Services and Analysis Tools for Solar Energetic Particle Events and
       hiukkaspurkausten ominaisuuksista kokonaisen aktiivisuusjakson ajalta
 contact: Dr. Rami Vainio
 contact_mail: rami.vainio@helsinki.fi
-tags: hello
+tags: Kategoria 1, Kategoria 2
 ---
 
 Auringonpurkauksissa syntyy korkeaenergiaisia varattuja hiukkasia,

@@ -2,8 +2,6 @@
 title: Organisaatio
 ---
 
-# Organisaatio
-
 <div class="right small-hide"> ![](/images/logo.svg) </div>
 
 Kumpulan avaruuskeskus on yhteistyöorganisaatio

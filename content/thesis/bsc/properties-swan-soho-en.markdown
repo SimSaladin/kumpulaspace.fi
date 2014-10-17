@@ -3,8 +3,6 @@ title: Properties of the Local Interstellar Cloud by SWAN/SOHO
 tags: Solar and Stellar Physics
 ---
 
-# $title$
-
 **start:** any time
 <br>**supervision:** Dr. Erkki Kyrölä, Finnish Meteorological Institute
 

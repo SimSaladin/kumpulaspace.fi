@@ -2,8 +2,6 @@
 title: Opetusta perustutkinto-opiskelijoille
 ---
 
-# Opetusta perustutkinto-opiskelijoille
-
 ## Kurssit
 
 $course_undergrad_tags$

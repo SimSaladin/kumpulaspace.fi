@@ -3,8 +3,6 @@ title: Coronal heating by ion-cyclotron waves
 tags: Solar and Stellar Physics
 ---
 
-# Coronal heating by ion-cyclotron waves
-
 **start:** any time
 <br>**supervision:** Dr. Rami Vainio, University of Helsinki
 

@@ -52,7 +52,27 @@
          </div>
 
          <div id="content">
-            $body$
+            $if(custom_layout)$
+               $body$
+            $else$
+               <div class="section level1">
+                  $if(is_projects)$
+                     <h1>$msg_projects$ $if(tag)$ ($tag$) $endif$</h1>
+                  $else$
+                     $if(is_courses)$
+                        <h1>$msg_courses$ $if(tag)$ ($tag$) $endif$</h1>
+                     $else$
+                        <h1>$title$</h1>
+                        $if(tags)$
+                           <p>
+                              <i>$tags$</i>
+                           </p>
+                        $endif$
+                     $endif$
+                  $endif$
+                  $body$
+               </div>
+            $endif$
          </div>
 
          <div id="footer">

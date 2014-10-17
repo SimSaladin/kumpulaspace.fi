@@ -2,8 +2,6 @@
 title: Opetus jatko-opiskelijoille
 ---
 
-# Jatko-opiskelijat
-
 Jato-opiskelijoiden määrä KSC:ssä:
 
 - HY: X

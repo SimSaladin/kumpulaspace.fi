@@ -1,0 +1,14 @@
+
+<p>$if(taglist)$ $taglist$ $endif$
+
+<ul class="padded">
+$for(items)$
+<li> <i>$title$</i>
+ <div style="font-size:80%"><ul>
+$if(status)$ <li>$status$</li> $endif$
+<li><a href="$url$">$msg_moreinfo$</a></li>
+$if(homepage)$ <li>$msg_homepage$: <a href="$homepage$">$homepage$</a></li> $endif$
+</ul></div>
+</li>
+$endfor$
+</ul>

@@ -1,17 +1,18 @@
 ---
 title: Kumpulan avaruuskeskus
+custom_layout: yes
 ---
 
 <div class="three-images left">
-![&nbsp;](/images/physicum.png)
-![&nbsp;](/images/ilmatieteenlaitos.jpg)
-![&nbsp;](/images/aalto.jpg)
+![HY Fysiikka](/images/physicum.png)
+![Ilmatieteenlaitos](/images/ilmatieteenlaitos.jpg)
+![Aalto yliopisto](/images/aalto.jpg)
 </div>
 
 <div class="three-images right">
-![&nbsp;](/images/aurinkotuuli.jpg)
-![&nbsp;](/images/solar_system.jpg)
-![&nbsp;](/images/galaksi.jpg)
+![Aurinkotuuli](/images/aurinkotuuli.jpg)
+![Aurinkokunta](/images/solar_system.jpg)
+![Galaksi](/images/galaksi.jpg)
 </div>
 
 # Kumpulan avaruuskeskus
@@ -26,11 +27,11 @@ ja Otaniemen kampuksilla ([katso kartta](https://www.google.fi/maps/place/Aalto+
 
 ## Yhteystiedot
 
-Peter Johansson, astrofysiikan apulaisprofessori<br/>
-Helsingin yliopisto, Fysiikan laitos<br/>
+Peter Johansson, astrofysiikan apulaisprofessori\
+Helsingin yliopisto, Fysiikan laitos\
 PL 64, 00014 Helsingin yliopisto
 
-Puh: (+358) 2941 51211<br/>
+Puh: (+358) 2941 51211\
 s-posti: <Peter.Johansson@helsinki.fi>
 
 ## Linkkejä

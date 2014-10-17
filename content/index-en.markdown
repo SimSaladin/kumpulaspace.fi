@@ -1,17 +1,18 @@
 ---
 title: Kumpula Space Centre
+custom_layout: yes
 ---
 
 <div class="three-images left">
-![&nbsp;](/images/physicum.png)
-![&nbsp;](/images/ilmatieteenlaitos.jpg)
-![&nbsp;](/images/aalto.jpg)
+![UH Physics](/images/physicum.png)
+![FMI](/images/ilmatieteenlaitos.jpg)
+![Aalto University](/images/aalto.jpg)
 </div>
 
 <div class="three-images right">
-![&nbsp;](/images/aurinkotuuli.jpg)
-![&nbsp;](/images/solar_system.jpg)
-![&nbsp;](/images/galaksi.jpg)
+![Solar wind](/images/aurinkotuuli.jpg)
+![Solar system](/images/solar_system.jpg)
+![Galaxy](/images/galaksi.jpg)
 </div>
 
 # Kumpula Space Centre
@@ -27,12 +28,12 @@ and Otaniemi Campus ([see map](https://www.google.fi/maps/place/Aalto+University
 
 ## Contact
 
-Peter Johansson, Associate Professor of Astrophysics<br/>
-University of Helsinki, Department of Physics<br/>
-P.O. Box 64, FIN-00014 University of Helsinki<br/>
+Peter Johansson, Associate Professor of Astrophysics\
+University of Helsinki, Department of Physics\
+P.O. Box 64, FIN-00014 University of Helsinki\
 Finland
 
-Tel: (+358) 2941 51211<br/>
+Tel: (+358) 2941 51211\
 e-mail: <Peter.Johansson@helsinki.fi>
 
 ## Links

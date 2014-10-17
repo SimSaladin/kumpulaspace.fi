@@ -2,8 +2,6 @@
 title: Undergraduate education
 ---
 
-# Undergraduate education
-
 ## Courses
 
 $course_undergrad_tags$

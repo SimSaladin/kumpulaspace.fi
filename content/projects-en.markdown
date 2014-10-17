@@ -1,5 +1,6 @@
 ---
 title: Projects
+is_projects: yes
 ---
 
-$partial("templates/projects-en.html")$
+$partial("templates/projects-listing.html")$

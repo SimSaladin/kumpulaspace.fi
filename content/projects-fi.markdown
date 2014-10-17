@@ -1,5 +1,6 @@
 ---
 title: Projektit
+is_projects: yes
 ---
 
-$partial("templates/projects-fi.html")$
+$partial("templates/projects-listing.html")$

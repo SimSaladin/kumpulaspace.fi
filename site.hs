@@ -36,15 +36,15 @@ main = hakyllWith myConfig $ do
     -- Project tags
     projectTagsEn <- buildTags "content/projects/*-en.markdown" (fromCapture "project-tags/*-en.html")
     projectTagsFi <- buildTags "content/projects/*-fi.markdown" (fromCapture "project-tags/*-fi.html")
-    tagsRules projectTagsEn $ renderTagged projectCtx "templates/projects-en.html"
-    tagsRules projectTagsFi $ renderTagged projectCtx "templates/projects-fi.html"
+    tagsRules projectTagsEn $ renderTagged (constField "is_projects" "") projectCtx "templates/projects-listing.html"
+    tagsRules projectTagsFi $ renderTagged (constField "is_projects" "") projectCtx "templates/projects-listing.html"
 
     -- Course tags
     [ucTags, pcTags] <- forM ["undergrad", "postgrad"] $ \sub ->
         forM ["en", "fi"] $ \lang -> do
             tags <- buildTags (fromString $ "content/courses/" ++ sub ++ "/*-" ++ lang ++ ".markdown")
                               (fromCapture $ fromString $ "course-tags-" ++ sub ++ "/*-" ++ lang ++ ".html")
-            tagsRules tags $ renderTagged defaultContext $ fromFilePath $ "templates/courses-" ++ lang ++ ".html"
+            tagsRules tags $ renderTagged (constField "is_courses" "") defaultContext $ fromFilePath $ "templates/courses-listing.html"
             return tags
 
     match "content/publications/*.pdf" $ do
@@ -62,16 +62,14 @@ main = hakyllWith myConfig $ do
         compile $ do
 
             lang <- getLang
-            projectTags <- renderTagList $ if lang == "fi" then projectTagsFi else projectTagsEn
-                           -- TODO ^ should use @Languages@ or smth
-
             let langIndex = if lang == "fi" then 1 else 0
 
-            ucTagsList <- renderTagList $ ucTags !! langIndex
-            pcTagsList <- renderTagList $ pcTags !! langIndex
+            projectTags <- renderTagList $ [projectTagsEn, projectTagsFi] !! langIndex
+            ucTagsList  <- renderTagList $ ucTags !! langIndex
+            pcTagsList  <- renderTagList $ pcTags !! langIndex
 
             ctx' <- defaultContextWithLang
-            let ctx = listField "items" projectCtx projects
+            let ctx = listField "items" (projectCtx <> ctx') projects
                     <> listField "publications" defaultContext publications
                     <> constField "project_tags" projectTags
                     <> listField "undergrad_courses" defaultContext (itemsAt "courses/undergrad")
@@ -90,13 +88,14 @@ myConfig :: Configuration
 myConfig = defaultConfiguration
     { deployCommand = "" }
 
-renderTagged :: Context String -> Identifier -> String -> Pattern -> Rules ()
-renderTagged itemCtx templ tag pat = do
+renderTagged :: Context String -> Context String -> Identifier -> String -> Pattern -> Rules ()
+renderTagged inCtx itemCtx templ tag pat = do
     route idRoute
     compile $ do
         ctx' <- defaultContextWithLang
-        let ctx = listField "items" itemCtx (loadAll pat)
+        let ctx = listField "items" (itemCtx <> ctx') (loadAll pat)
                 <> constField "tag" tag
+                <> inCtx
                 <> ctx'
         makeItem ""
             >>= loadAndApplyTemplate templ ctx 

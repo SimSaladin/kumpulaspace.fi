@@ -2,8 +2,6 @@
 title: Organisation
 ---
 
-# Organisation
-
 <div class="right small-hide"> ![](/images/logo.svg) </div>
 
 Kumpula Space Centre is an organisation for co-operation

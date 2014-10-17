@@ -2,8 +2,6 @@
 title: Postgraduate education
 ---
 
-# Postgraduate education
-
 Number of graduate students at KSC:
 
 - in UH: X

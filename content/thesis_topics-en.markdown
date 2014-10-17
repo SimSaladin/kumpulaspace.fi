@@ -2,9 +2,6 @@
 title: Topics for MSc theses
 ---
 
-
-# Topics for MSc theses
-
 If you are interested in some of the topics, please contact
 
 Prof. Hannu Koskinen<br>
