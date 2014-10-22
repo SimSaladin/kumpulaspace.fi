@@ -21,6 +21,7 @@ in the projects of the centre.
 
 The Centre is supervised by the Steering Group whose members are
 
-- Professor Tuija Pulkkinen, Dean of AALTO/ELEC (chair)
+- Professor Tuija Pulkkinen, Aalto University, Vice President, Research and
+  Innovation
 - Professor Hannu Koskinen, UH Department of Physics
 - Professor Yrjö Viisanen, FMI

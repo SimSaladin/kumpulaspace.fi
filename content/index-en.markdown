@@ -41,12 +41,12 @@ e-mail: <Peter.Johansson@helsinki.fi>
 - [FMI Space Sesearch](http://space.fmi.fi)
 - [UH Space Physics](http://theory.physics.helsinki.fi/~space)
 - [UH Astrophysics and Cosmology](http://www.physics.helsinki.fi/tutkimus/afo)
-- [Aalto school of engineering](http://eng.aalto.fi/en)
+- [Aalto School of Electrical Engineering](http://elec.aalto.fi/en)
 
 #
 
 <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1982.5484397722335!2d24.963200599999997!3d60.20475559999999!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4692099f3e9b3871%3A0xdd5d410934b329cf!2sPhysicum%2C+00560+Helsinki!5e0!3m2!1sen!2sfi!4v1413315067602"
    width="400" height="300" frameborder="0" style="border:0"></iframe>
 
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3967.3140919038365!2d24.826994964980926!3d60.18640866034065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x4240e7a8e62add5a!2sAalto+University!5e0!3m2!1sen!2sfi!4v1413315284499"
+<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1983.4863996483164!2d24.831279999999996!3d60.189232999999994!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x468df5ec2cbd624b%3A0xc071cd6e9ef6e65!2sOtakaari+5%2C+02150+Espoo%2C+Finland!5e0!3m2!1sen!2s!4v1413974735735"
    width="400" height="300" frameborder="0" style="border:0"></iframe>
