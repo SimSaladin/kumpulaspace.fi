@@ -49,7 +49,7 @@ do
     if [ "master" == "$branch" ]; then
         rebuild
 
-    elif ["production" == "$branch"]; then
+    elif [ "production" == "$branch" ]; then
         rebuild
         deploy
     else
