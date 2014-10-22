@@ -2,4 +2,5 @@
 
 while read oldrev newref ref
 do
+    branch=$(git rev-parse --symbolic --abbrev-ref $refname)
 done
