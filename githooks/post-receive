@@ -42,7 +42,7 @@ deploy(){
 
 while read oldrev newrev refname
 do
-    branch=$(git rev-parse --symbolic --abbrev-ref $refname)
+    branch=$(run_git rev-parse --symbolic --abbrev-ref $refname)
 
     status "Received branch $branch"
 
