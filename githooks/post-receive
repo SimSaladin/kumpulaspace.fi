@@ -24,7 +24,10 @@ rebuild(){
     run_git merge --ff master
     run_git checkout -f
 
-    (cd "$DIR" && ./site build || (./site clean && ./site build))
+    pushd "$DIR"
+    ./site build || (./site clean && ./site build)
+    chmod -R a+rw .
+    popd
 
     status "TEST site updated: http://h209.it.helsinki.fi/test"
 }
@@ -32,7 +35,7 @@ rebuild(){
 deploy(){
     status "Deploying..."
 
-    cp -R "$DIR/_site/." $PRODUCTION_DIR
+    rsync -av "$DIR/_site/." $PRODUCTION_DIR
 
     status "Site succesfully deployed!"
 }

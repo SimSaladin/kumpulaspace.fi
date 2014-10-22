@@ -1,6 +1,18 @@
 #!/bin/sh -e
 
+DIR=/var/www/ksc 
+
+run_git(){
+    git --work-tree="$DIR" --git-dir="$DIR/.git" $@
+}
+
 while read oldrev newref ref
 do
     branch=$(git rev-parse --symbolic --abbrev-ref $refname)
+
+    if [ "test" == "$branch" ]; then
+        echo "ERROR: tried to push into 'test' branch"
+        echo "   please only push to 'master' or 'deploy'"
+        exit 1
+    fi
 done
