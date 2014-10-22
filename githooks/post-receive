@@ -1,0 +1,24 @@
+#!/bin/sh -e
+
+DIR=/var/www/ksc 
+PRODUCTION_DIR=/var/www/html_
+
+cd $DIR
+
+rebuild(){
+    git merge --ff master
+    ./site build || (./site clean && ./site build)
+}
+
+while read oldrev newrev refname
+do
+    branch=$(git rev-parse --symbolic --abbrev-ref $refname)
+
+    if [ "master" == "$branch" ]; then
+        rebuild
+
+    elif ["production" == "$branch"]; then
+        rebuild
+        cp -R ./_site/. $PRODUCTION_DIR
+    fi
+done
