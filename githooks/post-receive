@@ -35,7 +35,7 @@ rebuild(){
 deploy(){
     status "Deploying..."
 
-    rsync -avO "$DIR/_site/" $PRODUCTION_DIR
+    rsync -rlp "$DIR/_site/" $PRODUCTION_DIR
 
     status "Site succesfully deployed!"
 }
