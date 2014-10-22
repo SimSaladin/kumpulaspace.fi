@@ -1,32 +1,43 @@
 #!/bin/sh -e
 
 DIR=/var/www/ksc 
-PRODUCTION_DIR=/var/www/html_
+PRODUCTION_DIR=/var/www/html
 
 echo "=== Starting post-receive... ==="
 
+status(){
+    echo
+    echo " ** $1"
+    echo
+}
+
 rebuild(){
-    echo "=== * merge and rebuild TEST site ==="
+
+    status "merge and rebuild TEST site"
+
     git merge --ff master
     pushd ..
     ./site build || (./site clean && ./site build)
     popd
-    echo "=== * TEST site updated: http://h209.it.helsinki.fi/test"
+
+    status "TEST site updated: http://h209.it.helsinki.fi/test"
 }
 
 deploy(){
-    echo "=== * Deploying..."
+    status "Deploying..."
+
     pushd ..
     cp -R "$DIR/_site/." $PRODUCTION_DIR
     popd
-    echo "=== * Site succesfully deployed!"
+
+    status "Site succesfully deployed!"
 }
 
 while read oldrev newrev refname
 do
     branch=$(git rev-parse --symbolic --abbrev-ref $refname)
 
-    echo "=== * Received branch $branch"
+    status "Received branch $branch"
 
     if [ "master" == "$branch" ]; then
         rebuild
