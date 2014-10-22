@@ -169,7 +169,7 @@ Create file `/etc/httpd/conf.d/ksc.conf`:
     cd ksc
     git clone <ksc-repo> .
     git checkout -b test
-    ln -s githooks/post-receive .git/hooks/
+    ln -s ../../githooks/{post,pre}-receive .git/hooks/
     scp <ksc-bin> ./site
     cd /var/www/html
     ln -s ../ksc/_site test       # _site dir is used by `./site build`
