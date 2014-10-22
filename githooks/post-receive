@@ -3,22 +3,34 @@
 DIR=/var/www/ksc 
 PRODUCTION_DIR=/var/www/html_
 
+echo "=== Starting post-receive... ==="
+
 cd $DIR
 
 rebuild(){
+    echo "=== * merge and rebuild TEST site ==="
     git merge --ff master
     ./site build || (./site clean && ./site build)
+    echo "=== * TEST site updated: http://h209.it.helsinki.fi/test"
 }
+
+deploy(){
+    echo "=== * Deploying..."
+    cp -R ./_site/. $PRODUCTION_DIR
+    echo "=== * Site succesfully deployed!"
+}
+
 
 while read oldrev newrev refname
 do
     branch=$(git rev-parse --symbolic --abbrev-ref $refname)
+
+    echo "=== * Received branch $branch"
 
     if [ "master" == "$branch" ]; then
         rebuild
 
     elif ["production" == "$branch"]; then
         rebuild
-        cp -R ./_site/. $PRODUCTION_DIR
     fi
 done
