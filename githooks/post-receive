@@ -14,7 +14,7 @@ status(){
 }
 
 run_git(){
-    git --work-tree "$DIR" $@
+    git --work-tree="$DIR" --git-dir="$DIR/.git" $@
 }
 
 rebuild(){
