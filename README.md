@@ -1,5 +1,5 @@
 
-# kumpulaspace.fi site
+# www.kumpulaspace.fi
 
 This site is built on Hakyll, but you do not need to know Hakyll to make even
 big changes in the site, as explained in the next section.
