@@ -16,6 +16,7 @@ rebuild(){
     status "merge and rebuild TEST site"
 
     git merge --ff master
+    git checkout -f
     pushd ..
     ./site build || (./site clean && ./site build)
     popd
