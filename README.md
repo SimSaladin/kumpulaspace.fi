@@ -20,12 +20,18 @@ can modify the files in whatever editor or file browser you want):
     git checkout master
     $EDITOR content/index-en.markdown # make changes...
     git commit -am "Changed something"
+
+    # To /test
     git push
+
+    # To production
+    git push origin master:production
+
 
 *To avoid unnecessary headaches, always work with the master branch checked out
 locally.* Pushing to the master branch *always* modifies only the /test section
-of the site - **to update production instance**, refer to the section "To
-production" below (in short, do a push master:production).
+of the site - to update the production instance, refer to the section "To
+production" below.
 
 In the last step the git hooks installed on the server check that your
 modifications were sensible, then regenerates the site html. **git push will
