@@ -16,8 +16,8 @@ It is not a new institute or space agency.
 The Director of Kumpula Space Centre is Peter Johansson (UH Department of
 Physics), the Deputy Directors are Minna Palmroth (FMI) and Esa Kallio
 (Aalto-ELEC). The personnel of the centre consists of personnel of the Finnish
-Meteorological Institute, University of Helsinki or Aalto University, who work
-in the projects of the centre.
+Meteorological Institute, University of Helsinki and Aalto University, 
+who work in the projects of the centre.
 
 The Centre is supervised by the Steering Group whose members are
 

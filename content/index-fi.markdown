@@ -40,6 +40,7 @@ s-posti: <Peter.Johansson@helsinki.fi>
 - [HY Avaruusfysiikka](http://theory.physics.helsinki.fi/~space)
 - [HY Alkeishiukkasfysiikka ja astrofysiikka](http://www.physics.helsinki.fi/tutkimus/afo)
 - [Aalto Insinööritieteiden korkeakoulu](http://elec.aalto.fi/fi)
+- [Aalto Planetaarinen avaruustutkimus](http://space.aalto.fi/)
 
 #
 

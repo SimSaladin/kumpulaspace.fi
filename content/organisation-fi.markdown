@@ -18,7 +18,6 @@ Minna Palmroth (IL) ja Esa Kallio (Aalto-ELEC).
 
 Keskuksen toimintaa valvoo ohjausryhmä, johon kuuluu
 
-- Professori Tuija Pulkkinen, Aalto-yliopiston sähkötekniikan korkeakoulun
-  varadekaani (varapuheenjohtaja)
+- Professori Tuija Pulkkinen, Aalto-yliopiston Vararehtori, Tutkimus ja innovaatiot
 - Professori Hannu Koskinen, HY:n fysiikan laitos
 - Professori Yrjö Viisanen, IL 

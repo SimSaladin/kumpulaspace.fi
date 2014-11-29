@@ -38,10 +38,11 @@ e-mail: <Peter.Johansson@helsinki.fi>
 
 ## Links
    
-- [FMI Space Sesearch](http://space.fmi.fi)
+- [FMI Space Research](http://space.fmi.fi)
 - [UH Space Physics](http://theory.physics.helsinki.fi/~space)
 - [UH Astrophysics and Cosmology](http://www.physics.helsinki.fi/tutkimus/afo)
 - [Aalto School of Electrical Engineering](http://elec.aalto.fi/en)
+- [Aalto Planetary Space Research](http://space.aalto.fi/)
 
 #
 
