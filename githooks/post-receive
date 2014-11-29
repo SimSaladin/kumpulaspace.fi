@@ -3,41 +3,49 @@
 DIR=/var/www/ksc 
 PRODUCTION_DIR=/var/www/html-ksc
 
-echo "=== Starting post-receive... ==="
-
-cd "$DIR"
-
 status(){
-    echo
-    echo " ** $1"
+    echo " *** $1 ***"
     echo
 }
+
+status "Running the post-receive hook"
+
+cd "$DIR"
 
 run_git(){
     git --work-tree="$DIR" --git-dir="$DIR/.git" $@
 }
 
+# $1 = branch to build
 rebuild(){
+    status "Now building the TEST site"
+    echo
 
-    status "merge and rebuild TEST site"
+    # make sure we are at the test branch
+    run_git checkout test
 
-    run_git merge --ff master
-    run_git checkout -f
+    # this is quite destructive, but we assume that no one is modifying the test
+    # branch contents locally.
+    run_git reset --hard $1
 
     pushd "$DIR"
+
+    # a little hakyll magic
     ./site build || (./site clean && ./site build)
     chmod -R a+rw .
+
     popd
 
     status "TEST site updated: http://h209.it.helsinki.fi/test"
 }
 
 deploy(){
-    status "Deploying..."
+    status "Now building and deploying the PRODUCTION site"
+    echo
 
     rsync -rlp "$DIR/_site/" $PRODUCTION_DIR
 
-    status "Site succesfully deployed!"
+    status "PRODUCTION site succesfully deployed!"
 }
 
 while read oldrev newrev refname
@@ -45,14 +53,15 @@ do
     branch=$(run_git rev-parse --symbolic --abbrev-ref $refname)
 
     status "Received branch $branch"
+    echo
 
     if [ "master" == "$branch" ]; then
-        rebuild
+        rebuild master
 
     elif [ "production" == "$branch" ]; then
-        rebuild
+        rebuild production
         deploy
     else
-        echo "Warning: unknown branch $branch, not building"
+        echo "WARNING: unknown branch $branch, not building the site"
     fi
 done

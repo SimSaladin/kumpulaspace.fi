@@ -12,7 +12,7 @@ do
 
     if [ "test" == "$branch" ]; then
         echo "ERROR: tried to push into 'test' branch"
-        echo "   please only push to 'master' or 'production'"
+        echo "   please only push to 'master' (for testing in /test) or 'production' (to deploy)"
         exit 1
     fi
 done
