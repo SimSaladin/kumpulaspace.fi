@@ -4,8 +4,8 @@ DIR=/var/www/ksc
 PRODUCTION_DIR=/var/www/html-ksc
 
 status(){
-    echo " *** $1 ***"
     echo
+    echo " *** $1 ***"
 }
 
 status "Running the post-receive hook"
