@@ -2,12 +2,9 @@
 title: Opetusta perustutkinto-opiskelijoille
 ---
 
-Tähtitieteen kursseja Helsingin yliopistossa
-==============
+## Tähtitieteen kursseja Helsingin yliopistossa
 
-
-   Perusopinnot  
-------------------
+### Perusopinnot  
 
 [Havaitsevan tähtitieteen peruskurssi I](http://www.helsinki.fi/~jetsu/htt/httindex.html) (5 op)
 
@@ -19,10 +16,7 @@ Tähtitieteen kursseja Helsingin yliopistossa
 
 [Tähtitieteen perusteet II](https://moodle.helsinki.fi/course/view.php?id=7134) (5 op)
 
-
-
-   Aineopinnot   
-------------------
+### Aineopinnot   
 
 [Astrofysiikan peruskurssi](https://wiki.helsinki.fi/display/astjourn/Astrofysiikan+peruskurssi) (8 op)
 
@@ -38,18 +32,13 @@ Tähtitieteen kursseja Helsingin yliopistossa
 
 [Tähtien rakenne ja kehitys](https://wiki.helsinki.fi/pages/viewpage.action?pageId=63741925) (5 op)
 
-
-Lisäksi pakollisia kursseja, joista tähtitiede ei ole vastuussa:
------------------------
+### Lisäksi pakollisia kursseja, joista tähtitiede ei ole vastuussa:
 
 [Havaintojen tilastollinen käsittely ](https://weboodi.helsinki.fi/hy/opintjakstied.jsp?html=1&Kieli=1&Tunniste=53602) (3 op)
 
 [Tieteellinen laskenta II](http://www.courses.physics.helsinki.fi/fys/tilaII/) (5 op)
 
-
-
-   Syventävät opinnot 
-------------------------
+### Syventävät opinnot 
 
 [Aikasarja-analyysi tähtitieteessä](http://www.helsinki.fi/~jetsu/time1/time1.html) (5 op)
 
@@ -89,10 +78,7 @@ Lisäksi pakollisia kursseja, joista tähtitiede ei ole vastuussa:
 
 [Tähtitieteen seminaariharjoitukset](https://wiki.helsinki.fi/display/astjourn/Astrophysics+seminar) (3 op)
 
-
-
-   Muut opinnot / Avoin
--------------------------
+### Muut opinnot / Avoin
 
 [Maailmankaikkeus nyt](http://www.helsinki.fi/astro/opetus/kurssit/MKnyt/) (3 op)
 
@@ -101,14 +87,9 @@ Lisäksi pakollisia kursseja, joista tähtitiede ei ole vastuussa:
 Kerro tähtitieteestä - populaarikirjoittamisen kurssi	(3 op)
 
 
+## Avaruusfysiikan kursseja Helsingin yliopistossa
 
-Avaruusfysiikan kursseja Helsingin yliopistossa
-==============
-
-
-
-   Syventävät opinnot
-------------------------
+### Syventävät opinnot
 
 [Auringon fysiikka](http://www.courses.physics.helsinki.fi/teor/solphys/) (5 op)
 
@@ -128,29 +109,19 @@ Avaruusfysiikan kursseja Helsingin yliopistossa
 [Plasmafysiikan avaruussovelluksia](http://theory.physics.helsinki.fi/~plasma/) (5 op)
 
 
+## Teoreettisen fysiikan avaruusaiheisia kursseja Helsingin yliopistossa
 
-
-Teoreettisen fysiikan avaruusaiheisia kursseja Helsingin yliopistossa
-==============
-
-
-   Perusopinnot  
-------------------
+### Perusopinnot  
 
 [Kvanttifysiikan perusteet](http://www.courses.physics.helsinki.fi/teor/kfp/) (5 op)
 
 [Suhteellisuusteorian perusteet ](http://www.courses.physics.helsinki.fi/teor/stp/) (5 op)
 
-
-
-   Aineopinnot   
-------------------
+### Aineopinnot   
 
 [Kosmologia I](http://theory.physics.helsinki.fi/~cosmology/) (5 op)
 
-
-   Syventävät_opinnot
-------------------------
+### Syventävät_opinnot
 
 [Hydrodynamiikka](http://theory.physics.helsinki.fi/~hydro/) (5 op)
 

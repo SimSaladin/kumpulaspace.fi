@@ -2,13 +2,9 @@
 title: Undergraduate education
 ---
 
-Astronomy courses at the University of Helsinki
-==============
+## Astronomy courses at the University of Helsinki
 
-
-
-   Basic studies  
--------------------
+### Basic studies  
 
 [Basics of Observational Astronomy I](http://www.helsinki.fi/~jetsu/htt/httindex.html) (5 op)
 
@@ -20,10 +16,7 @@ Astronomy courses at the University of Helsinki
 
 [Fundamentals of Astronomy II](https://moodle.helsinki.fi/course/view.php?id=7134) (5 op)
 
-
-
-   Intermediate studies  
---------------------------
+### Intermediate studies  
 
 [Basic Course in Astrophysics](https://wiki.helsinki.fi/display/astjourn/Astrofysiikan+peruskurssi) (8 op)
 
@@ -39,19 +32,13 @@ Astronomy courses at the University of Helsinki
 
 [Stellar Structure and Evolution](https://wiki.helsinki.fi/pages/viewpage.action?pageId=63741925) (5 op)
 
-
-
-Additional intermediate level courses for astronomy students:
------------------------
+### Additional intermediate level courses for astronomy students
 
 [Statistical analysis of observations ](https://weboodi.helsinki.fi/hy/opintjakstied.jsp?html=1&Kieli=1&Tunniste=53602) (3 op)
 
 [Scientific Computing II](http://www.courses.physics.helsinki.fi/fys/tilaII/) (5 op)
 
-
-
-   Advanced studies 
------------------------
+### Advanced studies 
 
 [Time Series Analysis in Astronomy  ](http://www.helsinki.fi/~jetsu/time1/time1.html) (5 op)
 
@@ -91,15 +78,9 @@ Additional intermediate level courses for astronomy students:
 [Astronomy Seminar](https://wiki.helsinki.fi/display/astjourn/Astrophysics+seminar) (3 op)
 
 
+## Space physics courses at the University of Helsinki
 
-
-Space physics courses at the University of Helsinki
-==============
-
-
-
-   Advanced studies 
------------------------
+### Advanced studies 
 
 [Solar Physics](http://www.courses.physics.helsinki.fi/teor/solphys/) (5 op)
 
@@ -120,38 +101,27 @@ Space physics courses at the University of Helsinki
 [Space Applications of Plasma Physics](http://theory.physics.helsinki.fi/~plasma/) (5 op)
 
 
+## Space related theoretical physics courses at the University of Helsinki
 
-Space related theoretical physics courses at the University of Helsinki
-==============
-
-
-Basic studies  
---------------------
+### Basic studies  
 
 [Introduction to Quantum Physics](http://www.courses.physics.helsinki.fi/teor/kfp/) (5 op)
 
 [Introduction to Special Relativity](http://www.courses.physics.helsinki.fi/teor/stp/) (5 op)
 
-
-
-Intermediate studies  
---------------------------
+### Intermediate studies  
 
 [Cosmology I](http://theory.physics.helsinki.fi/~cosmology/) (5 op)
 
-
-Advanced studies 
------------------------
+### Advanced studies 
 
 [Hydrodynamics](http://theory.physics.helsinki.fi/~hydro/) (5 op)
 
-Special Course in Cosmology (10 op )
+Special Course in Cosmology (10 op)
 
 [Cosmology II](http://theory.physics.helsinki.fi/~cosmology/) (5 op)
 
 [General Relativity](http://theory.physics.helsinki.fi/~genrel/) (10 op)
-
-
 
 <!--
 
