@@ -55,7 +55,7 @@ University of Helsinki: Doctoral programme in Particle Physics and Universe Scie
 
 [Solar Physics](http://www.courses.physics.helsinki.fi/teor/solphys/) (5 op)
 
-[Space Geodesy](https://weboodi.helsinki.fi/hy/opintjakstied.jsp?html=1&Kieli=1&Tunniste=535110) (5 op) *(liekö olemassa vielä)*
+[Space Geodesy](https://weboodi.helsinki.fi/hy/opintjakstied.jsp?html=1&Kieli=1&Tunniste=535110) (5 op)
 
 [Advanced Space Physics](http://theory.physics.helsinki.fi/~plasma_jatko/) (10 op)
 
@@ -63,7 +63,7 @@ University of Helsinki: Doctoral programme in Particle Physics and Universe Scie
 
 [Radiation Detectors I](https://weboodi.helsinki.fi/hy/opintjakstied.jsp?html=1&Kieli=1&Tunniste=53261) (5 op)
 
-[Radiation Detectors I](https://weboodi.helsinki.fi/hy/opintjakstied.jsp?html=1&Kieli=1&Tunniste=53263) (5 op)	*(ei löydy opetustietoja)*
+[Radiation Detectors I](https://weboodi.helsinki.fi/hy/opintjakstied.jsp?html=1&Kieli=1&Tunniste=53263) (5 op)
 
 [Plasma Physics](http://theory.physics.helsinki.fi/~plasma/) (5 op)
 

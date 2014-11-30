@@ -102,7 +102,6 @@ Kerro tähtitieteestä - populaarikirjoittamisen kurssi	(3 op)
 [Säteilyn ilmaisimet I](https://weboodi.helsinki.fi/hy/opintjakstied.jsp?html=1&Kieli=1&Tunniste=53261) (5 op)
 
 [Säteilyn ilmaisimet II](https://weboodi.helsinki.fi/hy/opintjakstied.jsp?html=1&Kieli=1&Tunniste=53263) (5 op)
-*(ei löydy opetustietoja)*
 
 [Plasmafysiikka](http://theory.physics.helsinki.fi/~plasma/) (5 op)
 

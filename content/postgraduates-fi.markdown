@@ -30,7 +30,7 @@ Tähtitiede
 
 [Suurenergia-astrofysiikka](https://weboodi.helsinki.fi/hy/opintjakstied.jsp?html=1&Kieli=1&Tunniste=53833) (5 op)
 
-[Sähkömagneettinen sironta ja absorptio](https://weboodi.helsinki.fi/hy/opintjakstied.jsp?html=1&Kieli=1&Tunniste=53919) (5 op) 	*(sama kurssikoodi kuin sähk.magn. sironta I ?)*
+[Sähkömagneettinen sironta ja absorptio](https://weboodi.helsinki.fi/hy/opintjakstied.jsp?html=1&Kieli=1&Tunniste=53919) (5 op)
 
 [Sähkömagneettinen sironta I](http://wiki.helsinki.fi/display/53919/Electromagnetic+Scattering+I) (5 op)
 
@@ -62,7 +62,7 @@ Avaruusfysiikka
 
 [Säteilyn ilmaisimet I](https://weboodi.helsinki.fi/hy/opintjakstied.jsp?html=1&Kieli=1&Tunniste=53261) (5 op)
 
-[Säteilyn ilmaisimet II](https://weboodi.helsinki.fi/hy/opintjakstied.jsp?html=1&Kieli=1&Tunniste=53263) (5 op) *(ei löydy opetustietoja)*
+[Säteilyn ilmaisimet II](https://weboodi.helsinki.fi/hy/opintjakstied.jsp?html=1&Kieli=1&Tunniste=53263) (5 op)
 
 [Plasmafysiikka](http://theory.physics.helsinki.fi/~plasma/) (5 op)
 
