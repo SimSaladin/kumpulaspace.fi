@@ -66,11 +66,19 @@ h1, h2, h3, h4, h5, h6 {
    white-space:nowrap;
 }
 @media (max-width:55em) {
+   #logo {
+      zoom:0.5;
+   }
+   #header h1 {
+      zoom:0.7;
+   }
    #navigation {
       border:none;
    }
    #navigation a {
-      clear:both;
+      width:100%;
+      text-align:center;
+      padding-bottom:0.2em;
    }
 }
 #navigation a:last-child {
@@ -136,6 +144,7 @@ html, body {
    .three-images .figure, .three-images > img {
       float: left;
       width:33.33333%;
+      height:10em;
    }
    .small-hide {
       display:none;
